@@ -1,0 +1,194 @@
+/*color-root*/
+
+:root {
+  --basic-1: #ffffff;
+  --line-bar-white: rgba(255, 255, 255, 0.3);
+  --footer-white: rgba(255, 255, 255, 0.9);
+
+  --basic-2: #000000;
+  --copywrite-black: #231f20;
+  --black-sorting: rgba(0, 0, 0, 0.3);
+
+  --info-brown: #766357;
+  --hover-brown: #604e43;
+  --active-brown: #503e33;
+
+  --basic-3: #81b3d2;
+  --hover-blue: #669ec0;
+  --active-blue: #5496bd;
+
+  --txt-grey: #333333;
+  --reiting-grey: #666666;
+  --checkbox-block-grey: #6a6a6a;
+  --background-grey: #888888;
+  --simbol-grey: #a9a9a9;
+  --slider-gray: #ababab;
+  --triagle-gray: #cacaca;
+  --number-grey: #eeeeee;
+  --line-grey: #e5e5e5;
+  --field-hover-grey: #ebebeb;
+  --field-grey: #f2f2f2;
+  --logo-academy-grey: #bdbbbc;
+  --form-shadow: rgba(0, 1, 1, 0.15);
+  --shadow-slider-grey: rgba(171, 171, 171, 0.3);
+  --site-shadow: rgba(0, 1, 1, 0.2);
+}
+
+.main-body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Calibri", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-2);
+  text-transform: uppercase;
+  background-color: #f4b1a4;
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-2);
+}
+
+.interesting,
+.questing,
+.caption {
+  line-height: 24px;
+}
+
+.main-header,
+.caption,
+.reasons .website {
+  line-height: 26px;
+}
+
+.caption,
+.h-image,
+.features,
+.questing,
+.caption {
+  font-size: 21px;
+}
+
+.image-sedona,
+.main-header-logo {
+  background-color: var(--basic-3);
+}
+
+.image-town,
+.map {
+  background-color: var(--field-grey);
+}
+
+.map {
+  background-color: var(--field-hover-grey);
+}
+
+.features-all {
+  background-color: var(--number-grey);
+}
+
+.footers {
+  background-color: var(--footer-white);
+}
+
+.detals {
+  color: var(--txt-grey);
+}
+
+.questing {
+  weight: 700;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.show {
+  width: 137px;
+  height: 36px;
+  left: 584px;
+  top: 222px;
+  text-align: center;
+  color: var(--basic-1);
+  border: 2px solid var(--basic-1);
+  background-color: transparent;
+}
+
+.show:hover {
+  color: var(--basic-2);
+  background-color: var(--basic-1);
+}
+
+.info {
+  color: var(--basic-2);
+}
+
+.info:hover {
+  color: var(--basic-3);
+}
+
+.info:active {
+  color: var(--basic-2);
+}
+
+.info:visited {
+  color: var(--info-brown);
+}
+
+.a-sorting {
+  color: var(--black-sorting);
+}
+
+.a-sorting:visited,
+.a-sorting:hover {
+  color: var(--basic-3);
+}
+
+.a-sorting:active {
+  color: var(--basic-2);
+}
+
+.detals {
+  color: var(--basic-1);
+  background-color: var(--basic-3);
+}
+
+.detals:hover {
+  background-color: var(--hover-blue);
+}
+
+.detals:active {
+  color: var(--line-bar-white);
+  background-color: var(--active-blue);
+}
+
+.booking {
+  color: var(--basic-1);
+  background-color: var(--info-brown);
+}
+
+.booking:hover {
+  background-color: var(--hover-brown);
+}
+
+.booking:active {
+  color: var(--line-bar-white);
+  background-color: var(--active-brown);
+}
+
+.name-hotels:hover {
+  color: var(--basic-3);
+}
+
+.name-hotels:active {
+  color: var(--line-bar-white);
+}

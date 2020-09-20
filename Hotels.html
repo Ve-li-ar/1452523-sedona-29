@@ -1,126 +1,138 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <header>
+  <body class="main-body">
+    <header class="main-header">
       <nav>
-        <a href="index.html">
+        <a href="index.html" class="main-header-logo">
           <img src="https://via.placeholder.com/150x100" alt="Логотип Седона"
         /></a>
         <ul>
-          <li>ИНФОРМАЦИЯ</li>
-          <li><a href="">ФОТО И ВИДЕО</a></li>
-          <li><a href="">КАРТА ШТАТА</a></li>
-          <li><a href="">ГОСТИНИЦЫ</a></li>
+          <li class="left"><a class="info">информация</a></li>
+          <li class="left"><a href="">ФОТО И ВИДЕО</a></li>
+          <li class="right"><a href="">КАРТА ШТАТА</a></li>
+          <li class="hotels-nav right"><a href="">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2>ИНФРАСТУРКТУРА</h2>
+      <section class="checkbox left">
+        <h2 class="choice">ИНФРАСТУРКТУРА</h2>
         <ul>
-          <li>БАССЕЙН</li>
-          <li>ПАРКОВКА</li>
-          <li>WI-FI</li>
+          <li class="check">БАССЕЙН</li>
+          <li class="check">ПАРКОВКА</li>
+          <li class="check">WI-FI</li>
         </ul>
 
-        <h2>ТИП ЖИЛЬЯ</h2>
+        <h2 class="choice left">ТИП ЖИЛЬЯ</h2>
         <ul>
-          <li>ГОСТИНИЦА</li>
-          <li>МОТЕЛЬ</li>
-          <li>АПАРТАМЕНТЫ</li>
+          <li class="check">ГОСТИНИЦА</li>
+          <li class="check">МОТЕЛЬ</li>
+          <li class="check">АПАРТАМЕНТЫ</li>
         </ul>
+      </section>
 
-        <h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
+      <section class="slider">
+        <h2 class="left">СТОИМОСТЬ В СУТКИ (Р):</h2>
         <ul>
           <li>ОТ 0</li>
           <li>ДО 3000</li>
         </ul>
-        <button type="button">ПОКАЗАТЬ</button>
+        <a class="show" href="#">Показать</a>
       </section>
 
-      <section>
+      <section class="sorting">
         <h2>НАЙДЕНО: 3</h2>
-        <h3>СОРТИРОВКА</h3>
+        <p>СОРТИРОВКА</p>
         <ul>
-          <li><a href="#">ПО ЦЕНЕ</a></li>
-          <li><a href="#">ПО ТИПУ</a></li>
-          <li><a href="#">ПО РЕЙТИНГУ</a></li>
+          <li><a class="a-sorting" href="#">ПО ЦЕНЕ</a></li>
+          <li><a class="a-sorting" href="#">ПО ТИПУ</a></li>
+          <li><a class="a-sorting" href="#">ПО РЕЙТИНГУ</a></li>
         </ul>
 
-        <a href="#">НАЗАД</a>
-        <a href="#">ВПЕРЕД</a>
+        <a class="triagle" href="#"></a>
+        <a class="triagle" href="#"></a>
+      </section>
 
+      <section class="hotels">
         <ul>
-          <li>
+          <li class="type-hotels">
             <a href="#">
               <img src="https://via.placeholder.com/90x15" alt="AMARA RESORT" />
             </a>
-            <h2><a href="#">AMARA RESORT & SPA</a></h2>
-            <p>ГОСТИНИЦА</p>
-            <p>ОТ 4000 Р.</p>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
-            <p>РЕЙТИНГ: 8,5</p>
+            <h2><a href="#" class="name-hotels">AMARA RESORT & SPA</a></h2>
+            <p class="type-hotels">ГОСТИНИЦА</p>
+            <p class="price">ОТ 4000 Р.</p>
+            <a class="detals" href="#">ПОДРОБНЕЕ</a>
+            <a class="booking" href="#">ЗАБРОНИРОВАТЬ</a>
+            <p class="rating">РЕЙТИНГ: 8,5</p>
           </li>
-          <li>
+          <li class="type-hotels">
             <a href="#">
               <img
                 src="https://via.placeholder.com/90x15"
                 alt="DESERT QUAL INN"
               />
             </a>
-            <h2><a href="#">DESERT QUAL INN</a></h2>
-            <p>МОТЕЛЬ</p>
-            <p>ОТ 3000 Р.</p>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
-            <p>РЕЙТИНГ: 8,9</p>
+            <h2><a href="#" class="name-hotels">DESERT QUAL INN</a></h2>
+            <p class="type-hotels">МОТЕЛЬ</p>
+            <p class="price">ОТ 3000 Р.</p>
+            <a class="detals" href="#">ПОДРОБНЕЕ</a>
+            <a class="booking" href="#">ЗАБРОНИРОВАТЬ</a>
+            <p class="rating">РЕЙТИНГ: 8,9</p>
           </li>
-          <li>
+          <li class="type-hotels">
             <a href="#">
               <img
                 src="https://via.placeholder.com/90x15"
                 alt="Villas at poco diablo"
               />
             </a>
-            <h2><a href="#">VILLAS AT POCO DIABLO</a></h2>
-            <p>АПАРТАМЕНТЫ</p>
-            <p>ОТ 2000 Р.</p>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
-            <p>РЕЙТИНГ: 9,2</p>
+            <h2><a href="#" class="name-hotels">VILLAS AT POCO DIABLO</a></h2>
+            <p class="type-hotels">АПАРТАМЕНТЫ</p>
+            <p class="price">ОТ 2000 Р.</p>
+            <a class="detals" href="#">ПОДРОБНЕЕ</a>
+            <a class="booking" href="#">ЗАБРОНИРОВАТЬ</a>
+            <p class="rating">РЕЙТИНГ: 9,2</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="footers">
+      <div class="caption">
         <p>#VISITSEDONA</p>
         <p>ТЕЛ: +7(495) 666-01-66</p>
       </div>
-      <div>
+      <div class="social">
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#">Twitter</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#">Facebook</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#">YouTube</a>
           </li>
         </ul>
       </div>
       <div>
-        <p>Разработано:</p>
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <p class="website">Website by:</p>
+        <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss"
+          >HTML Academy</a
+        >
       </div>
     </footer>
   </body>
