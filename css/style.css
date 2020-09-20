@@ -43,7 +43,7 @@
   font-weight: 400;
   color: var(--basic-2);
   text-transform: uppercase;
-  background-color: #f4b1a4;
+  background-color: var(--basic-1);
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
@@ -98,6 +98,15 @@ a {
 
 .detals {
   color: var(--txt-grey);
+}
+
+.item-image {
+  background-color: var(--basic-3);
+}
+
+.image-town,
+.map {
+  background-color: var(--background-grey);
 }
 
 .questing {
@@ -157,16 +166,16 @@ a {
   color: var(--basic-2);
 }
 
-.detals {
+.detal {
   color: var(--basic-1);
   background-color: var(--basic-3);
 }
 
-.detals:hover {
+.detal:hover {
   background-color: var(--hover-blue);
 }
 
-.detals:active {
+.detal:active {
   color: var(--line-bar-white);
   background-color: var(--active-blue);
 }
