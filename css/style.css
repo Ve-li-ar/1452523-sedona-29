@@ -166,30 +166,40 @@ a {
   color: var(--basic-2);
 }
 
-.detal {
+.form {
+  background-color: var(--triagle-gray);
+}
+
+.detal,
+.search {
   color: var(--basic-1);
   background-color: var(--basic-3);
 }
 
-.detal:hover {
+.detal:hover,
+.search:hover {
   background-color: var(--hover-blue);
 }
 
-.detal:active {
+.detal:active,
+.search:active {
   color: var(--line-bar-white);
   background-color: var(--active-blue);
 }
 
-.booking {
+.booking,
+.search-hotel {
   color: var(--basic-1);
   background-color: var(--info-brown);
 }
 
-.booking:hover {
+.booking:hover,
+.search-hotel:hover {
   background-color: var(--hover-brown);
 }
 
-.booking:active {
+.booking:active,
+.search-hotel:active {
   color: var(--line-bar-white);
   background-color: var(--active-brown);
 }
