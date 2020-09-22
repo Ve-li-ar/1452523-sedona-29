@@ -11,13 +11,17 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body class="main-body">
+  <body class="main-body-grey">
+    <div class="main-body">
     <header class="main-header">
       <nav>
         <a class="main-header-logo">
-          <img src="https://via.placeholder.com/150x100" alt="Логотип Седона" />
+          <img src="img/logo1.svg" 
+          width="138px" 
+          height="70px" 
+          alt="Логотип Седона" />
         </a>
-        <ul>
+        <ul class="point">
           <li class="left"><a class="info">ИНФОРМАЦИЯ</a></li>
           <li class="left"><a href=#">ФОТО И ВИДЕО</a></li>
           <li class="right"><a>КАРТА ШТАТА</a></li>
@@ -29,7 +33,8 @@
     <main class="container">
       <h1 class="visually-hidden">SEDONA</h1>
       <div class="image-sedona">
-        <img src="https://via.placeholder.com/150x100" alt="SEDONA" />
+        <img src="img/image-sedona.jpg" width="1200" height="509px" alt="SEDONA" />
+        <img src="img/welcome.svg" width="456.65px" height="350.88px" alt="Welcome to Sedona">
       </div>
 
       <h2 class="caption">
@@ -39,31 +44,35 @@
         РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
       </p>
 
-      <div class="item-image">
+      <div>
+        <div class="item-image">
         <h3 class="h-image">НАСТОЯЩИЙ ГОРОДОК</h3>
         <p>№1</p>
         <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
-
+        </div>
         <div class="image-town">
-          <img src="https://via.placeholder.com/150x100" alt="true town" />
+          <img src="img/true-town.jpg" width="800px" height="256px" alt="true town" />
         </div>
       </div>
 
       <div>
-        <ul class="features-all">
+        <ul class="features-all-1 point">
           <li>
+            <img src="img/icon-house.svg" width="75px" height="72px" alt="house">
             <h3 class="features">ЖИЛЬЕ</h3>
             <p class="detals">
               РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!
             </p>
           </li>
           <li>
+            <img src="img/icon-burger.svg" width="75px" height="70px" alt="burger">
             <h3 class="features">ЕДА</h3>
             <p class="detals">
               ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
             </p>
           </li>
           <li>
+            <img src="img/icon-gifts.svg" width="64px" height="77px" alt="gifts">
             <h3 class="features">СУВЕНИРЫ</h3>
             <p class="detals">
               НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!
@@ -74,15 +83,15 @@
 
       <div class="item-image">
         <div class="image-town">
-          <img src="https://via.placeholder.com/150x100" alt="devil bridge" />
+          <img src="img/bridge-devil.jpg" width="800px" height="256px" alt="devil bridge" />
         </div>
         <h3 class="h-image">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
         <p>№2</p>
         <p>ДА, ПО НЕМУ МОЖНо ПРОЙТИ! ЕСЛИ ОСМЕЛИТЕСЬ</p>
       </div>
 
-      <div>
-        <ul class="features-all">
+      <div class="features-all-2">
+        <ul class="fetures point">
           <li>
             <h3 class="features">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p>№3</p>
@@ -112,13 +121,13 @@
       </div>
 
         <div class="form">
-          <h2 class="search-hotel">Поиск гостиницы в Седоне</h2>
+          <h2><a class="search-hotel">Поиск гостиницы в Седоне</a></h2>
           <!--Форма поиска гостиницы-->
           <a class="search">Найти</a>
         </section>
 
       <div class="map">
-        <img src="https://via.placeholder.com/150x100" alt="MAP" />
+        <img src="img/map.jpg"  width="1199" height="594" alt="MAP" />
       </div>
     </main>
 
@@ -128,24 +137,34 @@
         <p>ТЕЛ: +7(495) 666-01-66</p>
       </div>
       <div class="social">
-        <ul>
+        <ul class="point">
           <li>
-            <a href="#">Twitter</a>
+            <div class="soc">
+              <a href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="Twitter"></a>
+            </div>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <div class="soc">
+            <a href="#">
+              <img src="img/fb-icon.svg" width="12px" height="22px" alt="Facebook">
+            </a>
+            </div>
           </li>
           <li>
-            <a href="#">YouTube</a>
+            <div class="soc">
+              <a href="#"><img src="img/youtube.svg" width="20px" height="16px" alt="Twitter"></a>
+            </div>
           </li>
         </ul>
       </div>
       <div>
         <p class="website">Website by:</p>
-        <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss"
-          >HTML Academy</a
+        <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41px" alt="logo-htmlacademy "
+          HTML Academy</a
         >
       </div>
     </footer>
+  </div>
   </body>
 </html>

@@ -34,26 +34,42 @@
   --site-shadow: rgba(0, 1, 1, 0.2);
 }
 
+/*body*/
+.main-body-grey {
+  width: 1280px;
+  background-color: var(--background-grey);
+}
+
 .main-body {
   margin: 0;
-  padding: 0;
+  width: 1200px;
   font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   color: var(--basic-2);
   text-transform: uppercase;
   background-color: var(--basic-1);
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
+  list-style-type: none;
 }
 
+.main-header-logo {
+  background-color: transparent;
+}
+
+/*ссылки*/
 a {
   text-decoration: none;
   color: var(--basic-2);
 }
 
+.point {
+  list-style-type: none;
+}
+
+/*font-size*/
 .interesting,
 .questing,
 .caption {
@@ -74,8 +90,8 @@ a {
   font-size: 21px;
 }
 
-.image-sedona,
-.main-header-logo {
+/*background-color-image*/
+.image-sedona {
   background-color: var(--basic-3);
 }
 
@@ -84,35 +100,7 @@ a {
   background-color: var(--field-grey);
 }
 
-.map {
-  background-color: var(--field-hover-grey);
-}
-
-.features-all {
-  background-color: var(--number-grey);
-}
-
-.footers {
-  background-color: var(--footer-white);
-}
-
-.detals {
-  color: var(--txt-grey);
-}
-
-.item-image {
-  background-color: var(--basic-3);
-}
-
-.image-town,
-.map {
-  background-color: var(--background-grey);
-}
-
-.questing {
-  weight: 700;
-}
-
+/*align*/
 .right {
   text-align: right;
 }
@@ -121,6 +109,70 @@ a {
   text-align: left;
 }
 
+.point {
+  list-style-type: none;
+}
+/*хедер*/
+
+/*logo*/
+
+/*Sedona-image*/
+
+/*Sedona-town*/
+
+/*True-town*/
+/*devil-bridge*/
+.item-image {
+  background-color: var(--basic-3);
+}
+
+/*True-town*/
+
+/*devil-bridge*/
+
+/*features*/
+/*features-2*/
+.detals {
+  color: var(--txt-grey);
+}
+
+.features-all,
+.features-all-2 {
+  background-color: var(--number-grey);
+}
+
+/*features-1*/
+
+/*features-2*/
+
+/*questing*/
+.questing {
+  weight: 700;
+}
+
+/*form*/
+
+/*map*/
+.map {
+  background-color: var(--field-hover-grey);
+}
+
+/*footer*/
+.footers {
+  background-color: var(--footer-white);
+}
+
+.soc {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-3);
+}
+/*choice*/
+
+/*hotels*/
+
+/*buttons*/
+/*показать*/
 .show {
   width: 137px;
   height: 36px;
@@ -137,6 +189,7 @@ a {
   background-color: var(--basic-1);
 }
 
+/*информация*/
 .info {
   color: var(--basic-2);
 }
@@ -153,6 +206,7 @@ a {
   color: var(--info-brown);
 }
 
+/*сортировка*/
 .a-sorting {
   color: var(--black-sorting);
 }
@@ -166,10 +220,8 @@ a {
   color: var(--basic-2);
 }
 
-.form {
-  background-color: var(--triagle-gray);
-}
-
+/*подробности*/
+/*search*/
 .detal,
 .search {
   color: var(--basic-1);
@@ -187,6 +239,8 @@ a {
   background-color: var(--active-blue);
 }
 
+/*бронировать*/
+/*поиск гостиницы*/
 .booking,
 .search-hotel {
   color: var(--basic-1);
@@ -204,10 +258,11 @@ a {
   background-color: var(--active-brown);
 }
 
+/*названия отелей*/
 .name-hotels:hover {
   color: var(--basic-3);
 }
 
 .name-hotels:active {
-  color: var(--line-bar-white);
+  color: var(--black-sorting);
 }
