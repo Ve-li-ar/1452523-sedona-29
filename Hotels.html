@@ -13,182 +13,228 @@
 
   <body class="main-body-grey">
     <div class="main-body">
-      <header class="main-header point">
-        <nav>
+      <header class="main-header">
+        <nav class="main-navigation">
           <a href="index.html" class="main-header-logo">
             <img
               src="img/logo1.svg"
-              width="138px"
-              height="70px"
+              width="140"
+              height="70"
               alt="Логотип Седона"
           /></a>
-          <ul class="point">
+          <ul class="point site-navigation">
             <li class="left"><a class="info">информация</a></li>
-            <li class="left"><a href="">ФОТО И ВИДЕО</a></li>
-            <li class="right"><a href="">КАРТА ШТАТА</a></li>
-            <li class="hotels-nav right"><a href="">ГОСТИНИЦЫ</a></li>
+            <li class="left"><a href="#">ФОТО И ВИДЕО</a></li>
+            <li class="right"><a href="#">КАРТА ШТАТА</a></li>
+            <li class="hotels-nav right"><a href="#">ГОСТИНИЦЫ</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <section class="checkbox left">
-          <img src="img/back-choice.jpg" width="1200px" height="217px" alt="" />
-          <h2 class="choice">ИНФРАСТУРКТУРА</h2>
-          <ul class="point">
-            <li class="check">БАССЕЙН</li>
-            <li class="check">ПАРКОВКА</li>
-            <li class="check">WI-FI</li>
-          </ul>
+      <main">
+        <div class="background-image grid-infro">
+          <div class="checkbox grid-checkbox">
+            <img src="https://via.placeholder.com/150x100" alt="SEDONA" />
+            <h2 class="choice">ИНФРАСТРуКТУРА</h2>
+            <ul class="point">
+              <li class="check">БАССЕЙН</li>
+              <li class="check">ПАРКОВКА</li>
+              <li class="check">WI-FI</li>
+            </ul>
+          </div>
+          <div class="grid-type-home">
+            <h2 class="choice left">ТИП ЖИЛЬЯ</h2>
+            <ul class="point">
+              <li class="check">ГОСТИНИЦА</li>
+              <li class="check">МОТЕЛЬ</li>
+              <li class="check">АПАРТАМЕНТЫ</li>
+            </ul>
+          </div>
 
-          <h2 class="choice left">ТИП ЖИЛЬЯ</h2>
-          <ul class="point">
-            <li class="check">ГОСТИНИЦА</li>
-            <li class="check">МОТЕЛЬ</li>
-            <li class="check">АПАРТАМЕНТЫ</li>
-          </ul>
-        </section>
+          <div class="slider grid-price">
+            <h2 class="left">СТОИМОСТЬ В СУТКИ (Р):</h2>
+            <ul class="point">
+              <li>ОТ 0</li>
+              <li>ДО 3000</li>
+            </ul>
+            <a class="show" href="#">Показать</a>
+          </div>
+        </div>
 
-        <section class="slider">
-          <h2 class="left">СТОИМОСТЬ В СУТКИ (Р):</h2>
-          <ul class="point">
-            <li>ОТ 0</li>
-            <li>ДО 3000</li>
+        <section class="sorting grid-sorting">
+          <div class="grid-grid">
+            <h2 class="grid-search">НАЙДЕНО: 3</h2>
+            <p class="grid-sorting">СОРТИРОВКА</p>
+          </div>
+          <ul class="point grid-a-sorting">
+            <li class="grid-price-sorting"><a class="a-sorting" href="#">ПО ЦЕНЕ</a></li>
+            <li class="grid-type-sorting"><a class="a-sorting" href="#">ПО ТИПУ</a></li>
+            <li class="grid-raiting-sorting"><a class="a-sorting" href="#">ПО РЕЙТИНГУ</a></li>
           </ul>
-          <a class="show" href="#">Показать</a>
-        </section>
-
-        <section class="sorting">
-          <h2>НАЙДЕНО: 3</h2>
-          <p>СОРТИРОВКА</p>
-          <ul class="point">
-            <li><a class="a-sorting" href="#">ПО ЦЕНЕ</a></li>
-            <li><a class="a-sorting" href="#">ПО ТИПУ</a></li>
-            <li><a class="a-sorting" href="#">ПО РЕЙТИНГУ</a></li>
-          </ul>
-
-          <a class="triagle" href="#">
-            <img src="img/icon-up-dir.svg" width="10px" height="10px"
-          /></a>
-          <a class="triagle" href="#">
-            <img src="img/icon-down-dir.svg" width="10px" height="10px"
-          </a>
+          <div class="grids-triagle">
+            <a class="triagle grid-triagle-grey" href="#">
+              <img src="img/icon-up-dir.svg" width="10" height="10" alt=""
+            /></a>
+            <a class="triagle grid-triagle-blue" href="#">
+              <img src="img/icon-down-dir.svg" width="10" height="10" alt="" />
+            </a>
+          </div>
         </section>
 
         <section class="hotels">
           <ul class="t-hotels point">
-            <li class="type-hotels">
-              <a href="#">
-                <img
+            <li class="type-hotels grid-hotels">
+              <div class="grid-image">
+                <a href="#">
+                  <img
                   src="img/amara.jpg"
-                  width="135px"
-                  height="90px"
+                  width="135"
+                  height="90"
                   alt="AMARA RESORT"
-                />
-              </a>
-              <h2><a href="#" class="name-hotels">AMARA RESORT & SPA</a></h2>
-              <p class="type-hotels">ГОСТИНИЦА</p>
-              <p class="price">ОТ 4000 Р.</p>
-              <a class="detal" href="#">ПОДРОБНЕЕ</a>
-              <a class="booking" href="#">ЗАБРОНИРОВАТЬ</a>
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <p class="rating">РЕЙТИНГ: 8,5</p>
+                  />
+                </a>
+              </div>
+
+              <div class="grid-menu">
+                <h2 class="grid-name-hotels"><a href="#" class="name-hotels ">AMARA RESORT & SPA</a></h2>
+              
+                <div class="grid-text">
+                
+                <div class="grid-detal-hotels">
+                  <p class="type-hotels grid-type-hotels">ГОСТИНИЦА</p>
+                  <a class="detal grid-detal" href="#">ПОДРОБНЕЕ</a>
+                </div>
+
+                <div class="grid-price-booking">
+                  <p class="price grid-hotel-price">ОТ 4000 Р.</p>
+                  <a class="booking grid-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-rating">
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <p class="rating">РЕЙТИНГ: 8,5</p>
+            </div>
             </li>
-            <li class="type-hotels">
-              <a href="#">
-                <img
+
+
+            <li class="type-hotels grid-hotels">
+              <div class="grid-image">
+                <a href="#">
+                  <img
                   src="img/desert.jpg"
-                  width="135px"
-                  height="90px"
+                  width="135"
+                  height="90"
                   alt="DESERT QUAL INN"
-                />
-              </a>
-              <h2><a href="#" class="name-hotels">DESERT QUAL INN</a></h2>
-              <p class="type-hotels">МОТЕЛЬ</p>
-              <p class="price">ОТ 3000 Р.</p>
-              <a class="detal" href="#">ПОДРОБНЕЕ</a>
-              <a class="booking" href="#">ЗАБРОНИРОВАТЬ</a>
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <p class="rating">РЕЙТИНГ: 8,9</p>
+                  />
+                </a>
+              </div>
+
+              <div class="grid-menu">
+                <h2 class="grid-name-hotels"><a href="#" class="name-hotels">DESERT QUAL INN</a></h2>
+
+                <div class="grid-text">
+                
+                  <div class="grid-detal-hotels">
+                    <p class="type-hotels grid-type-hotels">МОТЕЛЬ</p>
+                    <a class="detal grid-detal" href="#">ПОДРОБНЕЕ</a>
+                  </div>
+                
+                  <div class="grid-price-booking">
+                    <p class="price grid-hotel-price">ОТ 3000 Р.</p>
+                    <a class="booking grid-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="grid-rating">
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <p class="rating">РЕЙТИНГ: 8,9</p>
+              </div>
             </li>
-            <li class="type-hotels">
-              <a href="#">
-                <img
+
+
+            <li class="type-hotels grid-hotels">
+              <div class="grid-image">
+                <a href="#">
+                  <img
                   src="img/villas.jpg"
-                  width="135px"
-                  height="90px"
+                  width="135"
+                  height="90"
                   alt="Villas at poco diablo"
-                />
-              </a>
-              <h2><a href="#" class="name-hotels">VILLAS AT POCO DIABLO</a></h2>
-              <p class="type-hotels">АПАРТАМЕНТЫ</p>
-              <p class="price">ОТ 2000 Р.</p>
-              <a class="detal" href="#">ПОДРОБНЕЕ</a>
-              <a class="booking" href="#">ЗАБРОНИРОВАТЬ</a>
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <img src="img/star.svg" width="19px" height="17px" alt="" />
-              <p class="rating">РЕЙТИНГ: 9,2</p>
+                  />
+                </a>
+              </div>
+
+              <div class="grid-menu">
+                <h2 class="grid-name-hotels"><a href="#" class="name-hotels">VILLAS AT POCO DIABLO</a></h2>
+              
+                <div class="grid-text">
+
+                  <div class="grid-detal-hotels">
+                  <p class="type-hotels">АПАРТАМЕНТЫ</p>
+                  <a class="detal" href="#">ПОДРОБНЕЕ</a>
+                </div>
+
+                <div class="grid-price-booking">
+                  <p class="price grid-hotel-price">ОТ 2000 Р.</p>
+                  <a class="booking grid-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
+              </div>
+            </div>
+
+              <div class="grid-rating">
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <img src="img/star.svg" width="19" height="17" alt="" />
+                <p class="rating">РЕЙТИНГ: 9,2</p>
+              </div>
             </li>
           </ul>
         </section>
       </main>
 
-      <footer class="footers">
-        <div class="caption">
-          <p>#VISITSEDONA</p>
-          <p>ТЕЛ: +7(495) 666-01-66</p>
-        </div>
-        <div class="social">
-          <ul class="point">
-            <li>
-              <div class="soc">
-                <a href="#"
-                  ><img
-                    src="img/twitter.svg"
-                    width="17px"
-                    height="15px"
-                    alt="Twitter"
-                /></a>
-              </div>
-            </li>
-            <li>
-              <div class="soc">
-                <a href="#">
-                  <img
-                    src="img/fb-icon.svg"
-                    width="12px"
-                    height="22px"
-                    alt="Facebook"
-                  />
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="soc">
-                <a href="#"
-                  ><img
-                    src="img/youtube.svg"
-                    width="20px"
-                    height="16px"
-                    alt="Twitter"
-                /></a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p class="website">Website by:</p>
-          <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41px"
-            alt="logo-htmlacademy " HTML Academy</a
-          >
-        </div>
-      </footer>
+  <footer class="main-footer">
+    <div class="caption">
+      <p>#VISITSEDONA</p>
+      <p>ТЕЛ: +7(495) 666-01-66</p>
     </div>
+    <div class="social">
+      <ul class="point socnetwork">
+        <li>
+          <div class="soc">
+            <a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter" /></a>
+          </div>
+        </li>
+        <li>
+          <div class="soc">
+            <a href="#">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="soc">
+            <a href="#"><img src="img/youtube.svg" width="20" height="15" alt="Twitter" /></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p class="website">Website by:</p>
+      <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="logo-htmlacademy" /></a>
+    </div>
+  </footer>
+  </div>
   </body>
-</html>
+  
+  </html>
+
