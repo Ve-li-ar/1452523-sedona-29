@@ -34,15 +34,16 @@
   --site-shadow: rgba(0, 1, 1, 0.2);
 }
 
-/*body*/
-.main-body-grey {
-  width: 1280px;
-  background-color: var(--background-grey);
+.page {
+  height: 100%;
 }
 
+/*body*/
+
 .main-body {
-  margin: 0;
-  width: 1200px;
+  max-width: 1200px;
+  min-height: 100%;
+  box-shadow: 0px 5px 15px var(--site-shadow);
   font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -52,19 +53,12 @@
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
-  list-style-type: none;
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-}
-
-.page {
-  height: 100%;
-}
-
-.visibility-hidden {
-  visibility: hidden;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
 }
 
 /*ссылки*/
@@ -73,261 +67,235 @@ a {
   color: var(--basic-2);
 }
 
-.point {
+ul {
   list-style-type: none;
-}
-
-/*font-size*/
-.interesting,
-.questing,
-.caption {
-  line-height: 24px;
-}
-
-.caption,
-.reasons,
-.website {
-  line-height: 26px;
-}
-
-.caption,
-.h-image,
-.features,
-.questing,
-.caption {
-  font-size: 21px;
-}
-
-/*background-color-image*/
-.image-sedona {
-  background-color: var(--basic-3);
-}
-
-.image-town,
-.map {
-  background-color: var(--field-grey);
-}
-
-.point {
-  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*хедер*/
-.main-header {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
 /*main-navigation*/
 .main-navigation {
-  display: grid;
-  font-size: 14px;
   line-height: 26px;
+  font-weight: 700;
   color: var(--basic-2);
-  background: transparent;
-  margin: 0;
   padding: 0;
-  height: 55px;
+  margin: 0;
+}
+
+.site-navigation {
+  display: flex;
+  position: relative;
+}
+
+.site-navigation li {
+  width: 20%;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 20%;
+}
+
+.link {
+  display: inherit;
+  padding: 10px;
+  color: var(--basic-2);
 }
 
 .main-header-logo {
-  justify-self: center;
-  display: block;
-  height: 70px;
-}
-.site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-left: 75px;
-  padding-right: 75px;
-  list-style: none;
-  position: relative;
-  bottom: 70px;
-  height: 55px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin: auto;
+  padding: auto;
 }
 
-.image-sedona {
+.info,
+.info:active {
+  color: var(--basic-2);
+}
+
+.info:hover {
+  color: var(--basic-3);
+}
+
+.info:visited {
+  color: var(--info-brown);
+}
+
+/*sedona-tagline-image*/
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.background-image-sedona {
   margin-top: -50px;
+  height: 510px;
+  width: 1200px;
+  background-color: var(--basic-3);
+  background-image: url(../img/image-sedona.jpg), url(../img/welcome.svg);
 }
 
-/*main*/
-.image-text-true-city {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.img-text {
+  width: 455px;
+  height: 350px;
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+
+.background-text {
+  width: 455px;
+  height: 350px;
+  padding: 80px 372px;
+}
+
+/*little-town*/
+.little-town {
+  line-height: 26px;
+}
+/*
+
+/*block 1*/
+/*block 3*/
+.image-text {
+  display: flex;
   background-color: var(--basic-3);
   width: 1200px;
-  height: 255px;
-  top: 780px;
-  left: 440px;
+  min-height: 100%;
 }
 
-.image-text-bridge-devil {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: var(--basic-3);
-  width: 1200px;
-  height: 255px;
-  left: 840px;
-  top: 1365px;
+.image-text--revercy {
+  flex-direction: row-reverse;
 }
 
-/*features*/
-.features-all-1,
-.features-all-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.item-image {
+  color: var(--basic-1);
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 100%;
+}
+
+.number-detals {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.image-town {
+  background-color: var(--triagle-gray);
+  width: 800px;
+  height: 256px;
+}
+
+/*features block-2*/
+.features-all-true-city,
+.features-all-bridge-devil {
+  display: flex;
   padding: 0;
   margin: 0;
+}
+
+.features-all-bridge-devil {
   background-color: var(--number-grey);
 }
 
-.detals {
-  color: var(--txt-grey);
+.feature-complex {
+  width: 400px;
+  min-height: 330px;
 }
 
-.background-image {
-  display: grid;
-  background-color: var(--basic-3);
-  width: 1200px;
-  height: 215px;
+.feature-complex-number {
+  width: 400px;
+  min-height: 255px;
 }
 
-.grid-checkbox {
-  grid-column: 1 / 3;
-  margin-left: 73px;
-  margin-right: 73px;
+/*questi0n*/
+.question {
+  font-size: 24px;
 }
 
-.grid-type-home {
-  grid-column: 3 / 5;
+.interesting {
+  font-size: 12px;
+  line-height: 21px;
 }
 
-.grid-price {
-  grid-column: 7 / 9;
-}
-
-/*questing*/
-.questing {
-  width: 700px;
-}
-/*1 порядок*/
-.grid-sorting {
-  display: grid;
-}
-
-/*2 порядок*/
-.grid-grid {
-  display: grid;
-  grid-column: 1 / 2;
-}
-
-/*3 порядок*/
-.grid-search {
-  grid-column: 1 / 2;
-}
-
-.grid-sorting {
-  grid-column: 2 / 3;
-}
-
-/*2 порядок*/
-.grid-a-sorting {
-  display: grid;
-  grid-column: 2 / 3;
-}
-
-/*3 порядок*/
-.grid-price-sorting {
-  grid-column: 1 / 2;
-}
-
-.grid-type-sorting {
-  grid-column: 2 / 3;
-}
-
-.grid-raiting-sorting {
-  grid-column: 3 / 4;
-}
-
-/*2 порядок*/
-.grids-triagle {
-  display: grid;
-  grid-column: 3 / 4;
-}
-
-/*1 порядок*/
-.grid-hotels {
-  display: grid;
-}
-
-/*2 порядок*/
-.grid-image {
-  grid-column: 1 / 2;
-  margin: 73px;
-}
-
-.grid-rating {
-  grid-column: 6 / 7;
-}
-
-.grid-menu {
-  display: grid;
-  grid-column: 2 / 3;
-}
-
-/*3 порядок*/
-.grid-name-hotels {
-  grid-row: 1 / 2;
-}
-
-.grid-text {
-  display: grid;
-  grid-row: 2 / 3;
-}
-
-/*4 порядок*/
-.grid-detal-hotels {
-  grid-column: 1 / 2;
-}
-
-.grid-price-booking {
-  grid-column: 2 / 3;
-}
-
-/*map*/
 .map {
-  background-color: var(--field-hover-grey);
+  width: 1200px;
+  height: 595px;
+  background-color: var(--field-grey);
 }
 
 /*footer*/
 .main-footer {
-  background-color: var(--footer-white00);
+  background-color: var(--footer-white);
   color: var(--basic-2);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  min-height: 100%;
 }
 
-.soc {
-  width: 46px;
-  height: 48px;
-  background-color: var(--basic-3);
-  align-self: center;
+.main-footer div {
+  width: 33%;
+  height: 100%;
+}
+
+/*visitsedona/tel*/
+.footer-caption {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+/*socnetwork*/
+.social {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-gap: 6px;
+  justify-content: center;
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin: 0;
 }
 
 .socnetwork {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-self: center;
-  padding: 0;
+  background-color: var(--basic-3);
+  width: 46px;
+  height: 48px;
+}
+
+.soc {
+  margin-top: 16px;
+  margin-left: 13px;
 }
 
 .by {
+  line-height: 26px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  justify-content: center;
+  grid-template-columns: 74px 114px;
+  gap: 8px;
+  align-items: center;
 }
 
-/*показать*/
+/*hotels*/
+.background-image-infro {
+  background-image: url(../img/back-choice.jpg);
+  width: 1200px;
+  height: 217px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: var(--basic-1);
+  margin-top: 10px;
+}
+
 .show {
   width: 137px;
   height: 36px;
@@ -344,47 +312,115 @@ a {
   background-color: var(--basic-1);
 }
 
-/*информация*/
-.info {
-  color: var(--basic-2);
-}
-
-.info:hover {
-  color: var(--basic-3);
-}
-
-.info:active {
-  color: var(--basic-2);
-}
-
-.info:visited {
-  color: var(--info-brown);
-}
-
 /*сортировка*/
+.sorting {
+  display: grid;
+  width: 1200px;
+  height: 85px;
+  border-bottom: 1px solid var(--line-grey);
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 30px;
+}
+
+.found-sorting {
+  display: flex;
+  padding-left: 73px;
+  align-items: center;
+}
+
+.search-sorting {
+  font-size: 21px;
+}
+
+.sorting-sorting {
+  font-size: 12px;
+  margin-left: 46px;
+}
+
+.list-a-sorting {
+  display: flex;
+  grid-template-columns: 50px 50px 75px;
+  font-size: 12px;
+  padding-right: 33px;
+  padding-left: 0;
+  align-items: center;
+}
+
+.triagle {
+  display: flex;
+  padding-right: 73px;
+  justify-self: flex-end;
+}
+
+/*"кнопки"*/
 .a-sorting {
   color: var(--black-sorting);
+  border-bottom: 1px dashed var(--basic-3);
+  margin-right: 33px;
 }
 
 .a-sorting:visited,
 .a-sorting:hover {
   color: var(--basic-3);
+  border-bottom: 0;
 }
 
 .a-sorting:active {
   color: var(--basic-2);
+  text-decoration: none;
 }
 
-/*подробности*/
-/*search*/
+.t-hotels {
+  width: 1200px;
+  height: 452px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+  text-align: left;
+}
+
+.type-hotels {
+  border-bottom: 1px solid var(--line-grey);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 30px;
+  padding: 23px 73px 30px 73px;
+}
+
+.name-hotels {
+  margin: 0;
+}
+
+.detal-hotels-price-booking {
+  display: grid;
+  align-items: center;
+  grid-gap: 6px;
+  grid-template-columns: 110px 142px;
+}
+
 .detal,
 .search {
-  color: var(--basic-1);
   background-color: var(--basic-3);
 }
 
+.booking,
+.search-hotel {
+  color: var(--basic-1);
+  background-color: var(--info-brown);
+}
+.detal,
+.search,
+.booking,
+.search-hotel {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 16px;
+  color: var(--basic-1);
+}
+
 .detal:hover,
-.search:hover {
+.search-hover {
   background-color: var(--hover-blue);
 }
 
@@ -392,14 +428,6 @@ a {
 .search:active {
   color: var(--line-bar-white);
   background-color: var(--active-blue);
-}
-
-/*бронировать*/
-/*поиск гостиницы*/
-.booking,
-.search-hotel {
-  color: var(--basic-1);
-  background-color: var(--info-brown);
 }
 
 .booking:hover,
