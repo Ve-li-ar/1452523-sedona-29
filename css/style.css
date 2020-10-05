@@ -86,6 +86,7 @@ ul {
 .site-navigation {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .site-navigation li {
@@ -102,6 +103,18 @@ ul {
   color: var(--basic-2);
 }
 
+.link:hover {
+  color: var(--basic-3);
+}
+
+.link:active {
+  color: var(--black-sorting);
+}
+
+.page-active {
+  color: var(--info-brown);
+}
+
 .main-header-logo {
   position: absolute;
   left: 50%;
@@ -109,19 +122,13 @@ ul {
   transform: translateX(-50%);
   margin: auto;
   padding: auto;
+  background-image: url(../img/logo1.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
-.info,
-.info:active {
-  color: var(--basic-2);
-}
-
-.info:hover {
-  color: var(--basic-3);
-}
-
-.info:visited {
-  color: var(--info-brown);
+.main-header-logo a {
+  display: block;
 }
 
 /*sedona-tagline-image*/
@@ -135,7 +142,8 @@ ul {
   height: 510px;
   width: 1200px;
   background-color: var(--basic-3);
-  background-image: url(../img/image-sedona.jpg), url(../img/welcome.svg);
+  background-image: url(../img/image-sedona.jpg), url(../img/welcome.svg),
+    url(../img/shape.svg);
 }
 
 .img-text {
@@ -145,17 +153,28 @@ ul {
   padding-bottom: 80px;
 }
 
-.background-text {
-  width: 455px;
-  height: 350px;
-  padding: 80px 372px;
+.shape {
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  transform: translateX(-69%);
+  order: 1;
+  top: 508px;
 }
 
 /*little-town*/
 .little-town {
   line-height: 26px;
 }
-/*
+
+.caption {
+  font-size: 21px;
+  padding: 42px 365px 0 365px;
+}
+
+.reasons {
+  padding: 16px 340px 51px 340px;
+}
 
 /*block 1*/
 /*block 3*/
@@ -180,10 +199,22 @@ ul {
 
 .number-detals {
   font-size: 21px;
+  line-height: 21px;
   font-weight: 700;
-  margin-top: 50px;
-  margin-bottom: 0;
-  padding: 0;
+  margin: 50px 120px 0 120px;
+  text-align: center;
+}
+
+.number {
+  font-size: 14px;
+  text-align: center;
+  margin: 25px 175px 0 175px;
+}
+
+.prescription {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 23px 48px 54px 48px;
 }
 
 .image-town {
@@ -195,39 +226,174 @@ ul {
 /*features block-2*/
 .features-all-true-city,
 .features-all-bridge-devil {
-  display: flex;
+  display: grid;
   padding: 0;
   margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
+}
+
+.features-all-true-city {
+  min-height: 330px;
 }
 
 .features-all-bridge-devil {
   background-color: var(--number-grey);
+  min-height: 256px;
 }
 
-.feature-complex {
+.feature-complex,
+.features-complex-number {
   width: 400px;
-  min-height: 330px;
+  padding: 0;
+  margin: 0;
+
+  line-height: 21px;
 }
 
 .feature-complex-number {
-  width: 400px;
   min-height: 255px;
 }
 
+.feature-complex {
+  min-height: 330px;
+}
+
+.house {
+  width: 75px;
+  height: 72px;
+  margin: 60px 165px 0 165px;
+}
+
+.features-house {
+  margin: 28px 168px 0 165px;
+  font-size: 21px;
+}
+
+.detals-house {
+  font-size: 14px;
+  margin: 25px 73px 0 73px;
+}
+
+.burger {
+  width: 75px;
+  height: 70px;
+  margin: 61px 165px 0 165px;
+}
+
+.features-burger {
+  font-size: 21px;
+  margin: 29px 182px 0 182px;
+}
+
+.detals-burger {
+  font-size: 14px;
+  margin: 25px 51px 0 51px;
+}
+
+.souvenir {
+  width: 64px;
+  height: 77px;
+  margin: 55px 168px 0 168px;
+}
+
+.features-souvenir {
+  margin: 25px 148px 0 148px;
+  font-size: 21px;
+}
+.detals-souvenir {
+  font-size: 14px;
+  margin: 25px 65px 0 65px;
+}
+
+.number-features {
+  padding: 47px 140px 0 140px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.far-features {
+  font-size: 14px;
+  padding: 23px 96px 54px 96px;
+}
+
+.to-las-vegas {
+  font-size: 14px;
+  padding: 23px 72px 54px 72px;
+}
+
+.bad-grand {
+  font-size: 14px;
+  padding: 23px 75px 54px 75px;
+}
 /*questi0n*/
 .question {
   font-size: 24px;
 }
 
+.div-interesting {
+  width: 1200px;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.question {
+  font-size: 30px;
+  line-height: 24px;
+  padding: 59px 382px 0 382px;
+}
+
 .interesting {
-  font-size: 12px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-hotel {
+  width: 319px;
+  height: 26px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  justify-items: center;
+  padding: 30px 124px;
+}
+
+.appointment {
+  width: 568px;
+  height: 395px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0px 7px 15px var(--form-shadow);
+  margin: 0 auto;
+}
+
+.appointment-item {
+  width: 458px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.button-search {
+  color: var(--basic-1);
+  background-color: var(--basic-3);
+  padding: 16px 182px;
+  font-size: 21px;
+  border: none;
+  text-transform: uppercase;
 }
 
 .map {
   width: 1200px;
   height: 595px;
   background-color: var(--field-grey);
+  background-image: url(../img/map.png);
 }
 
 /*footer*/
@@ -271,9 +437,16 @@ ul {
   height: 48px;
 }
 
-.soc {
-  margin-top: 16px;
-  margin-left: 13px;
+.tw {
+  margin: 17px 15px;
+}
+
+.fb {
+  margin: 13px 17px;
+}
+
+.youtube {
+  margin: 16px 13px;
 }
 
 .by {
@@ -344,15 +517,9 @@ ul {
   padding-right: 33px;
   padding-left: 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.triagle {
-  display: flex;
-  padding-right: 73px;
-  justify-self: flex-end;
-}
-
-/*"кнопки"*/
 .a-sorting {
   color: var(--black-sorting);
   border-bottom: 1px dashed var(--basic-3);
@@ -368,6 +535,17 @@ ul {
 .a-sorting:active {
   color: var(--basic-2);
   text-decoration: none;
+}
+
+.triagle {
+  display: flex;
+  padding-right: 73px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.triagle-grey {
+  margin-right: 12px;
 }
 
 .t-hotels {
@@ -392,6 +570,14 @@ ul {
   margin: 0;
 }
 
+.name-hotels:hover {
+  color: var(--basic-3);
+}
+
+.name-hotels:active {
+  color: var(--black-sorting);
+}
+
 .detal-hotels-price-booking {
   display: grid;
   align-items: center;
@@ -411,8 +597,7 @@ ul {
 }
 .detal,
 .search,
-.booking,
-.search-hotel {
+.booking {
   font-size: 14px;
   line-height: 21px;
   padding: 3px 16px;
@@ -441,11 +626,8 @@ ul {
   background-color: var(--active-brown);
 }
 
-/*названия отелей*/
-.name-hotels:hover {
-  color: var(--basic-3);
-}
-
-.name-hotels:active {
-  color: var(--black-sorting);
+.star {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
