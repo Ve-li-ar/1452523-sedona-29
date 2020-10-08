@@ -65,10 +65,10 @@
 
       <div class="image-text">
         <div class="item-image">
-          <h3 class="number-detals">НАСТОЯЩИЙ ГОРОДОК</h3>
+          <h3 class="number-detals">Настоящий городок</h3>
           <p class="number">-№1-</p>
           <p class="prescription">
-            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ
+            Седона не аттракцион для туристов, там течёт своя жизнь
           </p>
         </div>
 
@@ -91,9 +91,9 @@
               height="72"
               alt="house"
             />
-            <h3 class="features-house">ЖИЛЬЕ</h3>
+            <h3 class="features-house">Жильё</h3>
             <p class="detals-house">
-              РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="feature-complex">
@@ -127,10 +127,10 @@
 
       <div class="image-text image-text--revercy">
         <div class="item-image">
-          <h3 class="number-detals">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+          <h3 class="number-detals">Там есть мост дьявол</h3>
           <p class="number">-№2-</p>
           <p class="prescription">
-            ДА, ПО НЕМУ МОЖНо ПРОЙТИ! ЕСЛИ конечно вы ОСМЕЛИТЕСЬ
+            Да, по нему можно пройти! Если конечно вы осмелитесь
           </p>
         </div>
         <img
@@ -145,24 +145,24 @@
       <div>
         <ul class="features-all-bridge-devil">
           <li class="feature-complex-number">
-            <h3 class="number-features">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="number-features">Небольшая площадь</h3>
             <p class="number">-№3-</p>
             <p class="far-features">
-              ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
+              Все достопримечательности находятся очень близко
             </p>
           </li>
           <li class="feature-complex-number">
-            <h3 class="number-features">КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="number-features">Красивая дорога</h3>
             <p class="number">-№4-</p>
             <p class="to-las-vegas">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="feature-complex-number">
-            <h3 class="number-features">МАЛО ТУРИСТОВ</h3>
+            <h3 class="number-features">Мало туристов</h3>
             <p class="number">-№5-</p>
             <p class="bad-grand">
-              БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ
+              Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
         </ul>
@@ -170,29 +170,22 @@
 
       <div class="div-interesting">
         <div class="text-question">
-          <h2 class="question">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <h2 class="question">Заинтересовались?</h2>
           <p class="interesting">
-            УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br />
-            И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+            Укажите предполагаемые даты поездки, <br />
+            и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
         <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
       </div>
-      <!--
-      <div class="form">
-        Форма поиска гостиницы
-        <a class="search">Найти</a>
-      </div>
-    -->
 
-      <section class="appointment">
-        <h2 class="visibility-hidden">Поиск гостиницы в седоне</h2>
-        <form
-          class="appointment-form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <p class="appointment-item">
+      <form
+        class="appointment-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="form-search">
+          <p class="appointment-item appointment-item-common">
             <label for="appointment-date">Дата заезда</label>
             <input
               id="appointment-date"
@@ -201,8 +194,8 @@
               placeholder="24 апреля 2017"
             />
           </p>
-          <p class="appointment-item">
-            <label for="appointment-date-end">Дата выезда</label>
+          <p class="appointment-item appointment-item-common">
+            <label for="appointment-date">Дата выезда</label>
             <input
               id="appointment-date-end"
               type="text"
@@ -210,29 +203,32 @@
               placeholder="4 июля 2017"
             />
           </p>
+          <div class="appointment-item form-people">
+            <p class="appointment-item-people">
+              <label for="appointment-people">Взрослые</label>
+              <input
+                class="old"
+                id="appointment-people"
+                type="number"
+                name="date"
+                placeholder="2"
+              />
+            </p>
+            <p class="appointment-item-people">
+              <label for="appointment-child">Дети</label>
+              <input
+                class="child"
+                id="appointment-child"
+                type="number"
+                name="name"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <button class="button-search" type="submit">Найти</button>
+      </form>
 
-          <p class="appointment-item">
-            <label for="appointment-people">Взрослые</label>
-            <input
-              id="appointment-people"
-              type="number"
-              name="date"
-              placeholder="2"
-            />
-          </p>
-          <p class="appointment-item">
-            <label for="appointment-child">Дети</label>
-            <input
-              id="appointment-child"
-              type="number"
-              name="name"
-              placeholder="0"
-            />
-          </p>
-
-          <button class="button-search" type="submit">Найти</button>
-        </form>
-      </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1601749752302!5m2!1sru!2sru"
         width="1200"
