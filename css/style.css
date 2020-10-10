@@ -35,21 +35,26 @@
 }
 
 .page {
+  height: 100%;
+}
+
+.container-body {
   min-height: 100%;
+  width: 1200px;
+  box-shadow: 0px 5px 15px var(--site-shadow);
+  background-color: var(--basic-1);
 }
 
 /*body*/
 
 .main-body {
-  max-width: 1200px;
-  min-height: 100%;
-  box-shadow: 0px 5px 15px var(--site-shadow);
+  height: 100%;
   font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-2);
   text-transform: uppercase;
-  background-color: var(--basic-1);
+  background-color: var(--field-grey);
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
@@ -126,19 +131,21 @@ ul {
   background-repeat: no-repeat;
   z-index: 1;
 }
-
+/*
 .main-header-logo a {
   display: block;
 }
-
+*/
 /*sedona-tagline-image*/
 
 .visibility-hidden {
   visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .background-image-sedona {
-  margin-top: -50px;
+  margin-top: -29px;
   height: 510px;
   width: 1200px;
   background-color: var(--basic-3);
@@ -326,7 +333,9 @@ ul {
 }
 /*questi0n*/
 .question {
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 24px;
+  padding: 59px 382px 0 382px;
 }
 
 .div-interesting {
@@ -336,12 +345,6 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.question {
-  font-size: 30px;
-  line-height: 24px;
-  padding: 59px 382px 0 382px;
 }
 
 .interesting {
@@ -458,12 +461,7 @@ ul {
   display: flex;
   width: 1200px;
   height: 120px;
-  min-height: 100%;
-}
-
-.main-footer div {
-  width: 33%;
-  height: 100%;
+  justify-content: space-around;
 }
 
 /*visitsedona/tel*/
@@ -476,52 +474,125 @@ ul {
 
 /*socnetwork*/
 .social {
-  display: grid;
-  grid-template-columns: max-content max-content max-content;
-  grid-gap: 6px;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   padding-top: 36px;
   padding-bottom: 36px;
-  margin: 0;
 }
 
 .socnetwork {
+  margin-right: 6px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
   background-color: var(--basic-3);
-  width: 46px;
-  height: 48px;
 }
 
-.tw {
-  margin: 17px 15px;
+.social-button path {
+  fill: var(--basic-1);
 }
 
-.fb {
-  margin: 13px 17px;
+.social-button:hover {
+  background-color: var(--hover-blue);
+}
+.social-button:focus {
+  background-color: var(--active-blue);
 }
 
-.youtube {
-  margin: 16px 13px;
+.social-button:active path {
+  fill: var(--line-bar-white);
 }
 
 .by {
   line-height: 26px;
   display: grid;
-  justify-content: center;
   grid-template-columns: 74px 114px;
   gap: 8px;
   align-items: center;
+  justify-content: center;
+}
+
+.html-academy:hover {
+  fill: var(--basic-3);
+}
+
+.html-academy:active {
+  fill: var(--logo-academy-grey);
 }
 
 /*hotels*/
-.background-image-infro {
+.filters {
   background-image: url(../img/back-choice.jpg);
   width: 1200px;
   height: 217px;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  justify-content: space-between;
   color: var(--basic-1);
   margin-top: 10px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-left: 73px;
+  text-align: start;
+}
+
+.filter legend {
+  padding-top: 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-option {
+  margin-top: 25px;
+}
+
+.filter-option label {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-left: 17px;
+  left: 27px;
+}
+
+.filter-option input {
+  position: absolute;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-off.svg);
+  width: 23px;
+  height: 23px;
+  left: -26px;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-on.svg);
+  width: 27px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .show {
