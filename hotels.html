@@ -68,14 +68,35 @@
             </fieldset>
           </form>
           
-          <div>
-           <h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
-              <ul>
-                <li class="checkbox">ОТ 0</li>
-                <li class="checkbox">ДО 3000</li>
-              </ul>
-                <a class="show" href="#">Показать</a>
-          </div>
+          <form method="get" action="https://echo.htmlacademy.ru" class="price-filter">
+            <fieldset class="filter-item">
+              <legend>Стоимость в сутки (Р):</legend>
+                <div class="range-filter">
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input class="text" name="min-price" value="от 0">
+                    </label>
+                    <label class="max-price">
+                      <input class="text" name="max-price" value="до 3000">
+                    </label>
+                  </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                </div>
+            </fieldset>
+
+
+
+
+
+
+
+          </form>
         </div>
         
 
@@ -98,12 +119,14 @@
             </li>
           </ul>
 
-          <div class="triagle">
-            <a class="triagle-grey" href="#">
-              <img src="img/icon-up-dir.svg" width="10" height="10" alt="" />
+          <div class="triagles">
+            <a class="triagle" href="#">
+              <svg width="11" height="10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10h11L5.5 0z" /></svg>
             </a>
-            <a class="triagle-blue" href="#">
-              <img src="img/icon-down-dir.svg" width="10" height="10" alt="" />
+            <a class="triagle triagle-active" href="#">
+              <svg width="11" height="10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0h11" /></svg>
             </a>
           </div>
         </section>
@@ -111,20 +134,18 @@
         <section>
           <ul class="t-hotels">
             <li class="type-hotels">
+              <a href="#">
+                <img
+                  src="img/amara.jpg"
+                  width="135"
+                  height="90"
+                  alt="AMARA RESORT"
+                />
+              </a>
+              
               <div>
-                <a href="#">
-                  <img
-                    src="img/amara.jpg"
-                    width="135"
-                    height="90"
-                    alt="AMARA RESORT"
-                  />
-                </a>
-              </div>
-               
-              <div>
-                <h2 class="name-hotels">
-                  <a href="#">AMARA RESORT & SPA</a>
+                <h2 class="name-hotel">
+                  <a href="#" class="name-hotels">AMARA RESORT & SPA</a>
                 </h2>
 
                 <div class="detal-hotels-price-booking">
@@ -149,20 +170,18 @@
             </li>
 
             <li class="type-hotels">
+              <a href="#">
+                <img
+                  src="img/desert.jpg"
+                  width="135"
+                  height="90"
+                  alt="DESERT QUAL INN"
+                />
+              </a>
+              
               <div>
-                <a href="#">
-                  <img
-                    src="img/desert.jpg"
-                    width="135"
-                    height="90"
-                    alt="DESERT QUAL INN"
-                  />
-                </a>
-              </div>
-
-              <div>
-                <h2 class="name-hotels">
-                  <a href="#" >DESERT QUAL INN</a>
+                <h2 class="name-hotel">
+                  <a href="#" class="name-hotels">DESERT QUAL INN</a>
                 </h2>
 
                 <div class="detal-hotels-price-booking">
@@ -182,37 +201,35 @@
                   <img src="img/star.svg" width="19" height="17" alt="" />
                   <img src="img/star.svg" width="19" height="17" alt="" />
                 </div>
-                <p>РЕЙТИНГ: 8,9</p>
+                <p class="rating">РЕЙТИНГ: 8,9</p>
               </div>          
             </li>
 
             <li class="type-hotels">
-                <div>
-                  <a href="#">
-                    <img
-                      src="img/villas.jpg"
-                      width="135"
-                      height="90"
-                      alt="Villas at poco diablo"
-                    />
-                  </a>
+              <a href="#">
+                <img
+                  src="img/villas.jpg"
+                  width="135"
+                  height="90"
+                  alt="Villas at poco diablo"
+                />
+              </a>
+                
+              <div>
+                <h2 class="name-hotel">
+                  <a href="#" class="name-hotels">VILLAS AT POCO DIABLO</a>
+                </h2>
+
+                <div class="detal-hotels-price-booking">
+                  <p class="detal-price">АПАРТАМЕНТЫ</p>
+                  <p class="detal-price">ОТ 2000 Р.</p>
                 </div>
 
-                <div>
-                  <h2 class="name-hotels">
-                    <a href="#" class="name-hotels">VILLAS AT POCO DIABLO</a>
-                  </h2>
-
-                  <div class="detal-hotels-price-booking">
-                      <p class="detal-price">АПАРТАМЕНТЫ</p>
-                      <p class="detal-price">ОТ 2000 Р.</p>
-                  </div>
-
-                  <div class="detal-hotels-price-booking">
-                    <a class="detal detal-booking " href="#">ПОДРОБНЕЕ</a>
-                    <a class="booking detal-booking" href="#">ЗАБРОНИРОВАТЬ</a>
-                  </div>
+                <div class="detal-hotels-price-booking">
+                  <a class="detal detal-booking " href="#">ПОДРОБНЕЕ</a>
+                  <a class="booking detal-booking" href="#">ЗАБРОНИРОВАТЬ</a>
                 </div>
+              </div>
 
               <div>
                 <div class="star">

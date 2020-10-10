@@ -306,6 +306,7 @@ ul {
   margin: 25px 148px 0 148px;
   font-size: 21px;
 }
+
 .detals-souvenir {
   font-size: 14px;
   margin: 25px 65px 0 65px;
@@ -372,6 +373,7 @@ ul {
   width: 568px;
   height: 395px;
   padding: 0;
+  color: var(--basic-2);
 }
 
 .form-search {
@@ -387,16 +389,30 @@ ul {
   justify-content: space-between;
 }
 
+.appointment-date {
+  color: var(--basic-2);
+}
+
 .appointment-item label,
 .appointment-item input {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  color: var(--basic-2);
 }
 
 .appointment-item input {
   background-color: var(--field-grey);
+  padding-left: 12px;
+  position: relative;
+}
+
+.appointment-item input::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/calendar.svg);
+  width: 21px;
+  height: 23px;
+  order: 1;
 }
 
 .appointment-item input:hover {
@@ -416,6 +432,7 @@ ul {
 .appointment-item-people input {
   width: 114px;
   height: 38px;
+  text-align: center;
 }
 
 .old {
@@ -595,6 +612,115 @@ ul {
   background-position: 0 0;
 }
 
+.filter-input,
+.filter-input:hover {
+  color: var(--basic-1);
+}
+
+.filter-input:disabled {
+  color: var(--checkbox-block-grey);
+}
+
+.price-filter {
+  padding: 26px 73px 32px 0;
+  color: var(--basic-1);
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-item legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.price-controls {
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  border: 2px solid var(--basic-1);
+  border-radius: 2px;
+  position: relative;
+}
+
+.price-controls input[class="text"] {
+  background-color: transparent;
+  border: none;
+  color: var(--basic-1);
+  text-align: center;
+  padding: 7px 0 9px 0;
+  margin: 0;
+}
+
+.min-price::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-1);
+  top: 5px;
+  order: 1;
+  left: 159px;
+}
+
+.range-controls {
+  height: 20px;
+  margin-top: 20px;
+  padding-top: 9px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--line-bar-white);
+}
+
+.range-controls .bar {
+  width: 78.5%;
+  height: 2px;
+  background-color: var(--basic-1);
+}
+
+.range-controls .toggle {
+  position: relative;
+  top: -21px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 8px solid var(--basic-1);
+  background-color: var(--slider-gray);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--shadow-slider-grey);
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  position: absolute;
+  left: 230px;
+  top: -9px;
+}
+
+.toggle {
+  width: 19px;
+  height: 19px;
+}
+
+.toggle:hover {
+  width: 23px;
+  height: 22px;
+}
+
+.toggle:active {
+  fill: var(--basic-3);
+}
+
 .show {
   width: 137px;
   height: 36px;
@@ -669,15 +795,32 @@ ul {
   border: none;
 }
 
-.triagle {
+.triagles {
   display: flex;
-  padding-right: 73px;
+  margin-right: 73px;
   align-items: center;
   justify-content: space-between;
 }
 
-.triagle-grey {
+.triagle {
   margin-right: 12px;
+  fill: var(--triagle-gray);
+}
+
+.triagle-active {
+  fill: var(--basic-3);
+}
+
+.triagle:hover {
+  fill: var(--basic-2);
+}
+
+.triagle:active {
+  fill: var(--basic-3);
+}
+
+.triagle:last-child {
+  margin: 0;
 }
 
 .t-hotels {
@@ -698,7 +841,7 @@ ul {
   padding: 23px 73px 30px 73px;
 }
 
-.name-hotels {
+.name-hotel {
   margin: 0;
 }
 
@@ -759,4 +902,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.rating {
+  background-color: var(--field-grey);
+  padding: 3px 12px 3px 15px;
+  color: var(--reiting-grey);
 }
