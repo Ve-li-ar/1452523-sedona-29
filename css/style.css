@@ -388,7 +388,7 @@ ul {
   height: 40px;
   justify-content: space-between;
 }
-
+/*форма*/
 .appointment-date {
   color: var(--basic-2);
 }
@@ -404,6 +404,7 @@ ul {
   background-color: var(--field-grey);
   padding-left: 12px;
   position: relative;
+  color: var(--basic-2);
 }
 
 .appointment-item input::after {
@@ -900,12 +901,30 @@ ul {
 
 .star {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stars {
+  background-repeat: space;
+  background-image: url(../img/star.svg);
+  fill: var(--basic-3);
+}
+
+.star-four {
+  width: 90px;
+  height: 17px;
+}
+
+.star-three {
+  width: 72px;
+  height: 17px;
 }
 
 .rating {
   background-color: var(--field-grey);
   padding: 3px 12px 3px 15px;
   color: var(--reiting-grey);
+  margin: 0;
 }
