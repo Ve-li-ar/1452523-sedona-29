@@ -231,85 +231,55 @@ ul {
 }
 
 /*features block-2*/
-.features-all-true-city,
-.features-all-bridge-devil {
+.features-all {
   display: grid;
   padding: 0;
   margin: 0;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
+  text-align: center;
 }
 
 .features-all-true-city {
-  min-height: 330px;
-}
-
-.features-all-bridge-devil {
-  background-color: var(--number-grey);
-  min-height: 256px;
-}
-
-.feature-complex,
-.features-complex-number {
-  width: 400px;
-
-  line-height: 21px;
-}
-
-.feature-complex-number {
-  min-height: 255px;
-}
-
-.feature-complex {
-  min-height: 330px;
+  padding: 55px 65px 81px 73px;
+  gap: 120px;
 }
 
 .house {
   width: 75px;
   height: 72px;
-  margin: 60px 165px 0 165px;
-}
-
-.features-house {
-  margin: 28px 168px 0 165px;
-  font-size: 21px;
-}
-
-.detals-house {
-  font-size: 14px;
-  margin: 25px 73px 0 73px;
 }
 
 .burger {
   width: 75px;
   height: 70px;
-  margin: 61px 165px 0 165px;
-}
-
-.features-burger {
-  font-size: 21px;
-  margin: 29px 182px 0 182px;
-}
-
-.detals-burger {
-  font-size: 14px;
-  margin: 25px 51px 0 51px;
 }
 
 .souvenir {
   width: 64px;
   height: 77px;
-  margin: 55px 168px 0 168px;
 }
 
-.features-souvenir {
-  margin: 25px 148px 0 148px;
+.features-features {
   font-size: 21px;
+  font-weight: 700;
+  padding-top: 30px;
+  margin: 0;
 }
 
-.detals-souvenir {
+.detals {
   font-size: 14px;
-  margin: 25px 65px 0 65px;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.features-all-bridge-devil {
+  background-color: var(--number-grey);
+  min-height: 256px;
+  box-sizing: border-box;
+}
+
+.features-complex-number {
+  max-width: 400px;
 }
 
 .number-features {
@@ -332,35 +302,30 @@ ul {
   font-size: 14px;
   padding: 23px 75px 54px 75px;
 }
-/*questi0n*/
-.question {
-  font-size: 30px;
-  line-height: 24px;
-  padding: 59px 382px 0 382px;
-}
 
-.div-interesting {
-  width: 1200px;
-  min-height: 280px;
+/*questi0n*/
+.text-question {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 58px 382px 78px 382px;
 }
 
-.interesting {
+.question {
+  font-size: 30px;
   line-height: 24px;
 }
 
 .search-hotel {
-  width: 319px;
-  height: 26px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   justify-items: center;
   padding: 30px 124px;
   margin: 0;
+  min-width: 568px;
+  min-height: 86px;
 }
 
 .appointment-form {
@@ -372,7 +337,6 @@ ul {
   margin: 0 auto;
   width: 568px;
   height: 395px;
-  padding: 0;
   color: var(--basic-2);
 }
 
@@ -391,6 +355,7 @@ ul {
 /*форма*/
 .appointment-date {
   color: var(--basic-2);
+  position: relative;
 }
 
 .appointment-item label,
@@ -403,11 +368,10 @@ ul {
 .appointment-item input {
   background-color: var(--field-grey);
   padding-left: 12px;
-  position: relative;
   color: var(--basic-2);
 }
 
-.appointment-item input::after {
+.appointment-item label + input::before {
   content: "";
   position: absolute;
   background-image: url(../img/calendar.svg);
@@ -548,12 +512,13 @@ ul {
 /*hotels*/
 .filters {
   background-image: url(../img/back-choice.jpg);
-  width: 1200px;
-  height: 217px;
+  width: 100%;
+  min-height: 217px;
   display: flex;
   justify-content: space-between;
   color: var(--basic-1);
-  margin-top: 10px;
+  padding: 26px 73px 31px 73px;
+  box-sizing: border-box;
 }
 
 .filter {
@@ -562,36 +527,37 @@ ul {
   justify-content: space-between;
 }
 
-.filter fieldset {
+.name-form {
   padding: 0;
   margin: 0;
   border: none;
-  margin-left: 73px;
   text-align: start;
+  padding-right: 135px;
 }
 
 .filter legend {
-  padding-top: 26px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-option {
-  margin-top: 25px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 22px;
+}
+
+.filter-option:last-child {
+  padding: 0;
 }
 
 .filter-option label {
   display: block;
-  cursor: pointer;
-  user-select: none;
-  position: relative;
-  padding-left: 17px;
-  left: 27px;
-}
-
-.filter-option input {
   position: absolute;
+  padding-left: 42px;
 }
 
 .filter-input-checkbox + label::before {
@@ -600,7 +566,8 @@ ul {
   background-image: url(../img/checkbox-off.svg);
   width: 23px;
   height: 23px;
-  left: -26px;
+  left: 0;
+  background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -609,8 +576,8 @@ ul {
   background-image: url(../img/checkbox-on.svg);
   width: 27px;
   height: 23px;
+  left: 0;
   background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .filter-input,
@@ -623,7 +590,6 @@ ul {
 }
 
 .price-filter {
-  padding: 26px 73px 32px 0;
   color: var(--basic-1);
 }
 
@@ -680,20 +646,23 @@ ul {
 .range-controls .scale {
   height: 2px;
   background: var(--line-bar-white);
+  position: relative;
 }
 
 .range-controls .bar {
   width: 78.5%;
   height: 2px;
   background-color: var(--basic-1);
+  left: 8px;
+  position: absolute;
 }
 
-.range-controls .toggle {
+.toggle {
   position: relative;
   top: -21px;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 3.8px;
+  height: 3.8px;
   padding: 0;
   border: 8px solid var(--basic-1);
   background-color: var(--slider-gray);
@@ -702,20 +671,20 @@ ul {
   cursor: pointer;
 }
 
-.range-controls .toggle-max {
+.toggle-min {
   position: absolute;
-  left: 230px;
-  top: -9px;
+  top: 0;
 }
 
-.toggle {
-  width: 19px;
-  height: 19px;
+.toggle-max {
+  position: absolute;
+  left: 250px;
+  top: 0;
 }
 
 .toggle:hover {
-  width: 23px;
-  height: 22px;
+  width: 4.6px;
+  height: 4.4px;
 }
 
 .toggle:active {
