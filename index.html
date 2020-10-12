@@ -167,35 +167,46 @@
       </ul>
     
       
-        <div class="text-question">
+      <div class="text-question">
           <h2 class="question">Заинтересовались?</h2>
           <p class="interesting">
             Укажите предполагаемые даты поездки, <br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
-        <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
+      <button class="search-hotel" >Поиск гостиницы в Седоне</button>
       
         
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-search">
-            <p class="appointment-item appointment-item-common">
-              <label for="appointment-date">Дата заезда</label>
-              <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017" />
-            </p>
-            <p class="appointment-item appointment-item-common">
+            <div class="form-cell form-cell-common">
+              <label for="appointment-date" class="data-people">Дата заезда</label>
+                <div class="">
+                  <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017" />
+                </div> 
+            </div>
+            
+            <div class="form-cell form-cell-common">
               <label for="appointment-date">Дата выезда</label>
-              <input class="appointment-date" id="appointment-date-end" type="text" name="date" placeholder="4 июля 2017" />
-            </p>
-            <div class="appointment-item form-people">
-              <p class="appointment-item-people">
-                <label for="appointment-people">Взрослые</label>
-                <input class="old appointment-date" id="appointment-people" type="number" name="date" placeholder="2" />
-              </p>
-              <p class="appointment-item-people">
-                <label for="appointment-child">Дети</label>
-                <input class="child appointment-date" id="appointment-child" type="number" name="name" placeholder="0" />
-              </p>
+              <div class="">
+                <input id="appointment-date" type="number" name="date" placeholder="04 июля 2017" />
+              </div>
+            </div>
+           
+            <div class="form-cell">
+              <div class="form-cell-people">
+                <label for="appointment-date">Взрослые</label>
+                <div class="old">
+                  <input id="appointment-date" type="number" name="people" placeholder="2" />
+                </div>
+              </div>
+            
+              <div class="form-cell-people ">
+                <label for="appointment-date">Дети</label>
+                <div class="child">
+                   <input id="appointment-date" type="number" name="people" placeholder="0" />
+                </div>
+              </div>
             </div>
           </div>
           <button class="button-search" type="submit">Найти</button>

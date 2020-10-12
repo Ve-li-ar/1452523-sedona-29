@@ -309,7 +309,7 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 58px 382px 78px 382px;
+  padding: 58px 382px 58px 382px;
 }
 
 .question {
@@ -321,13 +321,18 @@ ul {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   justify-items: center;
-  padding: 30px 124px;
+  padding: 30px 125px;
   margin: 0;
   min-width: 568px;
   min-height: 86px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
 }
 
+/*форма*/
 .appointment-form {
   display: flex;
   flex-direction: column;
@@ -336,8 +341,8 @@ ul {
   box-shadow: 0px 7px 15px var(--form-shadow);
   margin: 0 auto;
   width: 568px;
-  height: 395px;
   color: var(--basic-2);
+  padding: 55px 0;
 }
 
 .form-search {
@@ -346,55 +351,64 @@ ul {
   align-items: center;
 }
 
-.form-people {
+.form-cell {
   display: flex;
-  width: 442px;
-  height: 40px;
   justify-content: space-between;
-}
-/*форма*/
-.appointment-date {
-  color: var(--basic-2);
-  position: relative;
+  padding-bottom: 29px;
 }
 
-.appointment-item label,
-.appointment-item input {
+.form-cell label,
+.form-cell input {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
 }
 
-.appointment-item input {
+.form-cell label {
+  padding-right: 5px;
+}
+
+/*
+.data-people {
+  align-items: center;
+}
+*/
+
+.form-cell input {
   background-color: var(--field-grey);
   padding-left: 12px;
-  color: var(--basic-2);
 }
 
-.appointment-item label + input::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/calendar.svg);
-  width: 21px;
-  height: 23px;
-  order: 1;
-}
-
-.appointment-item input:hover {
+.form-cell input:hover {
   background-color: var(--field-hover-grey);
 }
 
-.appointment-item input:focus {
+.form-cell input::placeholder {
+  color: var(--basic-2);
+}
+
+.form-cell input:focus {
   outline: 2px solid var(--line-grey);
   background-color: transparent;
 }
 
-.appointment-item-common input {
+.form-cell-common input {
   width: 346px;
   height: 38px;
 }
 
-.appointment-item-people input {
+.form-cell-people {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 53px;
+  margin: 0;
+}
+
+.form-cell-people:last-child {
+  padding-right: 0;
+}
+
+.form-cell-people input {
   width: 114px;
   height: 38px;
   text-align: center;
@@ -418,6 +432,7 @@ ul {
   outline: none;
   width: 458px;
   height: 58px;
+  font-weight: 700;
 }
 
 .button-search:hover {
