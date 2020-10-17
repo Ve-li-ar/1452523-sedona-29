@@ -84,8 +84,6 @@ ul {
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-2);
-  padding: 0;
-  margin: 0;
 }
 
 .site-navigation {
@@ -104,7 +102,7 @@ ul {
 
 .link {
   display: inherit;
-  padding: 10px;
+  padding: 15px 0;
   color: var(--basic-2);
 }
 
@@ -126,7 +124,6 @@ ul {
   top: 0;
   transform: translateX(-50%);
   margin: auto;
-  padding: auto;
   background-image: url(../img/logo1.svg);
   background-repeat: no-repeat;
   z-index: 1;
@@ -142,10 +139,10 @@ ul {
   visibility: hidden;
   width: 0;
   height: 0;
+  margin: 0;
 }
 
 .background-image-sedona {
-  margin-top: -29px;
   height: 510px;
   width: 1200px;
   background-color: var(--basic-3);
@@ -339,10 +336,13 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
   box-shadow: 0px 7px 15px var(--form-shadow);
-  margin: 0 auto;
+  position: relative;
   width: 568px;
   color: var(--basic-2);
   padding: 55px 0;
+  background-color: var(--basic-1);
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .form-search {
@@ -446,9 +446,17 @@ ul {
 
 .map {
   width: 1200px;
-  height: 595px;
+  height: 600px;
   background-color: var(--field-grey);
   background-image: url(../img/map.png);
+}
+
+.google-frame {
+  position: absolute;
+  transform: translate(0, -100%);
+  width: 1200px;
+  height: 600px;
+  z-index: 1;
 }
 
 /*footer*/
@@ -459,6 +467,12 @@ ul {
   width: 1200px;
   height: 120px;
   justify-content: space-around;
+}
+
+.footer-index {
+  z-index: 1;
+  margin-top: -115px;
+  position: relative;
 }
 
 /*visitsedona/tel*/
