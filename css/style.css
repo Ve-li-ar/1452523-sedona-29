@@ -148,6 +148,7 @@ ul {
   background-color: var(--basic-3);
   background-image: url(../img/image-sedona.jpg), url(../img/welcome.svg),
     url(../img/shape.svg);
+  position: relative;
 }
 
 .img-text {
@@ -158,12 +159,13 @@ ul {
 }
 
 .shape {
-  width: 1203px;
-  height: 58px;
+  width: 100%;
+  height: 57px;
   position: absolute;
-  transform: translateX(-69%);
+
   order: 1;
-  top: 508px;
+  bottom: 0;
+  left: 0;
 }
 
 /*little-town*/
@@ -339,21 +341,16 @@ ul {
   position: relative;
   width: 568px;
   color: var(--basic-2);
-  padding: 55px 0;
+  padding: 55px;
   background-color: var(--basic-1);
   z-index: 2;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .appointment-form label,
 .appointment-form svg {
   align-self: center;
-}
-
-.form-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .form-cell {
@@ -369,13 +366,8 @@ ul {
   border: none;
 }
 
-.form-cell label {
-  padding-right: 5px;
-}
-
 .form-cell input {
   background-color: var(--field-grey);
-  padding-left: 12px;
 }
 
 .form-cell input:hover {
@@ -404,24 +396,6 @@ ul {
 .form-cell-common svg:active,
 .form-cell-people svg:active {
   fill: var(--basic-3);
-}
-
-.form-cell-common input {
-  position: relative;
-}
-
-.form-cell-common input + svg {
-  position: absolute;
-  transform: translateX(2000%);
-}
-
-.form-cell-people input {
-  position: relative;
-}
-
-.form-cell-people input + svg {
-  position: absolute;
-  transform: translate(-170%, 115%);
 }
 
 .form-cell-common input {
@@ -698,10 +672,13 @@ ul {
 }
 
 .range-controls {
-  height: 20px;
   margin-top: 20px;
   padding-top: 9px;
   position: relative;
+}
+
+.range-filter {
+  margin-bottom: 23px;
 }
 
 .range-controls .scale {
@@ -710,7 +687,7 @@ ul {
   position: relative;
 }
 
-.range-controls .bar {
+.bar {
   width: 78.5%;
   height: 2px;
   background-color: var(--basic-1);
@@ -753,14 +730,11 @@ ul {
 }
 
 .show {
-  width: 137px;
-  height: 36px;
-  left: 584px;
-  top: 222px;
   text-align: center;
   color: var(--basic-1);
   border: 2px solid var(--basic-1);
   background-color: transparent;
+  padding: 8px 35px;
 }
 
 .show:hover {

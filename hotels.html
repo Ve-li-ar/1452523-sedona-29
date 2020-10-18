@@ -30,8 +30,8 @@
       </header>
 
       <main>
-        <div class="filters">
-          <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+        <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
+          <div class="filter" >
             <fieldset class="name-form">
               <legend>Инфраструктура</legend>
                 <ul>
@@ -68,9 +68,9 @@
                   </li>
                 </ul>
             </fieldset>
-          </form>
+          </div>
           
-          <form method="get" action="https://echo.htmlacademy.ru" class="price-filter">
+          <div class="price-filter">
             <fieldset class="filter-item">
               <legend>Стоимость в сутки (Р):</legend>
                 <div class="range-filter">
@@ -90,9 +90,10 @@
                     <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                 </div>
+                <a class="show" href="#">Показать</a>
             </fieldset>
-          </form>
-        </div>
+          </div>
+        </form>
         
         <section class="sorting">
           <div class="found-sorting">
