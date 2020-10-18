@@ -158,8 +158,8 @@ ul {
 }
 
 .shape {
-  width: 1200px;
-  height: 57px;
+  width: 1203px;
+  height: 58px;
   position: absolute;
   transform: translateX(-69%);
   order: 1;
@@ -345,6 +345,11 @@ ul {
   margin: 0 auto;
 }
 
+.appointment-form label,
+.appointment-form svg {
+  align-self: center;
+}
+
 .form-search {
   display: flex;
   flex-direction: column;
@@ -368,12 +373,6 @@ ul {
   padding-right: 5px;
 }
 
-/*
-.data-people {
-  align-items: center;
-}
-*/
-
 .form-cell input {
   background-color: var(--field-grey);
   padding-left: 12px;
@@ -390,6 +389,39 @@ ul {
 .form-cell input:focus {
   outline: 2px solid var(--line-grey);
   background-color: transparent;
+}
+
+.form-cell-common svg,
+.form-cell-people svg {
+  fill: var(--simbol-grey);
+}
+
+.form-cell-common svg:hover,
+.form-cell-people svg:hover {
+  fill: var(--basic-2);
+}
+
+.form-cell-common svg:active,
+.form-cell-people svg:active {
+  fill: var(--basic-3);
+}
+
+.form-cell-common input {
+  position: relative;
+}
+
+.form-cell-common input + svg {
+  position: absolute;
+  transform: translateX(2000%);
+}
+
+.form-cell-people input {
+  position: relative;
+}
+
+.form-cell-people input + svg {
+  position: absolute;
+  transform: translate(-170%, 115%);
 }
 
 .form-cell-common input {
