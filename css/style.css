@@ -333,99 +333,126 @@ ul {
 
 /*форма*/
 .appointment-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
   box-shadow: 0px 7px 15px var(--form-shadow);
   position: relative;
   width: 568px;
-  color: var(--basic-2);
   padding: 55px;
   background-color: var(--basic-1);
   z-index: 2;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-.appointment-form label,
-.appointment-form svg {
-  align-self: center;
+  text-align: center;
 }
 
 .form-cell {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 29px;
+  justify-content: space-between;
 }
 
-.form-cell label,
-.form-cell input {
+.form-cell label {
   font-weight: 700;
-  text-transform: uppercase;
-  border: none;
+  align-self: center;
 }
 
-.form-cell input {
-  background-color: var(--field-grey);
+.input-calendar {
+  position: relative;
 }
 
-.form-cell input:hover {
+.input-calendar input:hover,
+.people input:hover {
   background-color: var(--field-hover-grey);
 }
 
-.form-cell input::placeholder {
-  color: var(--basic-2);
-}
-
-.form-cell input:focus {
+.input-calendar input:focus,
+.people input:focus {
   outline: 2px solid var(--line-grey);
   background-color: transparent;
 }
 
-.form-cell-common svg,
-.form-cell-people svg {
-  fill: var(--simbol-grey);
+.input-calendar input {
+  width: 346px;
+  height: 38px;
+  border: none;
+  background-color: var(--field-grey);
+  box-sizing: border-box;
 }
 
-.form-cell-common svg:hover,
-.form-cell-people svg:hover {
+.calendar {
+  fill: var(--simbol-grey);
+  padding: 5px;
+}
+
+.calendar:hover {
   fill: var(--basic-2);
 }
 
-.form-cell-common svg:active,
-.form-cell-people svg:active {
+.calendar:active {
   fill: var(--basic-3);
 }
 
-.form-cell-common input {
-  width: 346px;
-  height: 38px;
+.input-calendar svg {
+  position: absolute;
+  top: 2%;
+  right: 0;
+}
+.input-calendar input::placeholder {
+  font-weight: 700;
+  color: var(--basic-2);
+  text-transform: uppercase;
+  padding: 6px 10px;
 }
 
-.form-cell-people {
+.people input::placeholder {
+  color: var(--basic-2);
+}
+
+.number-people {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 53px;
+}
+
+.number-people:last-child {
+  margin-right: 0;
+}
+
+.people {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding-right: 53px;
-  margin: 0;
-}
-
-.form-cell-people:last-child {
-  padding-right: 0;
-}
-
-.form-cell-people input {
+  margin-left: 10px;
+  box-sizing: border-box;
   width: 114px;
   height: 38px;
+}
+
+.people input {
+  width: 114px;
+  height: 38px;
+  border: none;
+  background-color: var(--field-grey);
   text-align: center;
+  font-weight: 700;
+  padding: 0;
 }
 
 .old {
-  margin-left: 20px;
+  margin-left: 43px;
 }
 
-.child {
-  margin-left: 12px;
+.minus {
+  position: absolute;
+  z-index: 5;
+  top: 33%;
+  left: 1%;
+}
+
+.plus {
+  position: absolute;
+  z-index: 5;
+  top: 23%;
+  right: 1%;
 }
 
 .button-search {
@@ -436,7 +463,7 @@ ul {
   text-transform: uppercase;
   margin: 0 auto;
   outline: none;
-  width: 458px;
+  width: 100%;
   height: 58px;
   font-weight: 700;
 }
