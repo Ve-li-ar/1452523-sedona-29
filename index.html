@@ -24,13 +24,17 @@
             />
           </a>
           <ul class="site-navigation">
-            <li>
+            <li class="left">
               <a href="#" class="link left">Информация</a>
             </li>
-            <li><a href="#" class="link photo-video left">Фото и видео</a></li>
-            <li class="right state-map"><a href="#"  class="link ">Карта штата</a></li>
+            <li class="left">
+              <a href="#" class="link photo-video">Фото и видео</a>
+            </li>
             <li class="right">
-            <a href="hotels.html"  class="link ">Гостиницы</a>
+              <a href="#" class="link state-map">Карта штата</a>
+            </li>
+            <li class="right">
+            <a href="hotels.html"  class="link">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +48,7 @@
             src="img/welcome.svg"
             width="455"
             height="350"
-            alt="Welcome to Sedona"
+            alt="Горы на фоне гор на фоне гор и надпись Welcome to the gourgeous Sedona"
           />
           <svg aria-hidden="true" class="shape" width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white" />
@@ -73,7 +77,7 @@
             src="img/true-town.jpg"
             width="800"
             height="256"
-            alt="Седона - городок со своей жизнью."
+            alt="Веранда на фоне гор, американский флаг, кусты, цветы"
           />
         </div>
 
@@ -132,7 +136,7 @@
             src="img/bridge-devil.jpg"
             width="800"
             height="256"
-            alt="devil bridge"
+            alt="Каньон на фоне зелени, глубокий и резкий обрыв вниз с тонкой каменной тропинкой"
           />
         </div>
 
@@ -167,12 +171,12 @@
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
-        <button tabindex="0" class="search-hotel">Поиск гостиницы в Седоне</button>
+        <button aria-label="Поиск гостиницы в Седоне" tabindex="0" class="search-hotel">Поиск гостиницы в Седоне</button>
       
         <div class="map">
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form-cell">
-              <label for="appointment-date">Дата заезда</label>
+              <label for="appointment-date">Дата заезда:</label>
               <div  class="input-calendar">
                 <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017" />
                   <svg tabindex="0" aria-hidden="true" class="calendar" width="21" height="23" viewBox="0 0 21 23"  xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +190,7 @@
            
             
             <div class="form-cell">
-              <label for="appointment-date-end">Дата выезда</label>
+              <label for="appointment-date-end">Дата выезда:</label>
               <div class="input-calendar">
                 <input id="appointment-date-end" type="text" name="date" placeholder="4 июля 2017" />
                 <svg tabindex="0" aria-hidden="true" class="calendar" width="21" height="23" viewBox="0 0 21 23"  xmlns="http://www.w3.org/2000/svg">
@@ -199,7 +203,7 @@
            
             <div class="form-cell">
               <div class="number-people">
-                <label for="appointment-people">Взрослые</label>
+                <label for="appointment-people">Взрослые:</label>
                 <div class="people old">
                   <svg  aria-hidden="true" class="minus calendar" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                     <rect width="12" height="3"/>
@@ -213,7 +217,7 @@
               </div>
               
               <div class="number-people">
-                <label for="appointment-child">Дети</label>
+                <label for="appointment-child">Дети:</label>
                 <div class="people child">
                   <svg aria-hidden="true" class="minus calendar" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
                     <rect width="12" height="3" />
@@ -226,7 +230,7 @@
                 </div>
               </div>
             </div>
-            <button tabindex="0" class="button-search" type="submit">Найти</button>
+            <button tabindex="0" aria-label="Найти гостиницу в Седоне" class="button-search" type="submit">Найти</button>
           </form>
         </div> 
       
@@ -239,7 +243,7 @@
             allowfullscreen=""
             aria-hidden="false"                   
             style="border: 0"
-            title="Седона - городок Аризоны со своей жизнью и развлечениями"
+            title="Карта штата, в котором расположен город Седона"
             >
           </iframe>
         </div>
