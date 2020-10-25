@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="main-body">
@@ -36,21 +36,21 @@
                 <ul>
                   <li  class="filter-option check">  
                    <label >
-                      <input tabindex="-1" class="check-input" type="checkbox" checked>
+                      <input class="check-input" type="checkbox" checked>
                       <span tabindex="0" class="check-box"></span> 
                         Бассейн
                     </label>
                   </li>
                   <li class="filter-option check">
                     <label>
-                      <input tabindex="-1" class="check-input" type="checkbox">
+                      <input class="check-input" type="checkbox">
                       <span tabindex="0" class="check-box"></span>
                         Парковка
                     </label>
                   </li>
                   <li class="filter-option check">  
                     <label>
-                      <input tabindex="-1" class="check-input" type="checkbox">
+                      <input class="check-input" type="checkbox">
                       <span tabindex="0" class="check-box"></span>
                         WI-FI
                     </label>
@@ -62,21 +62,21 @@
               <ul>
                 <li class="filter-option check">
                   <label>
-                    <input tabindex="-1" class="check-input" type="checkbox" checked>
+                    <input class="check-input" type="checkbox" checked>
                     <span tabindex="0" class="check-box"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="filter-option check">
                   <label>
-                    <input tabindex="-1" class="check-input" type="checkbox">
+                    <input class="check-input" type="checkbox">
                     <span tabindex="0" class="check-box"></span>
                     Мотель
                   </label>
                 </li>
                 <li class="filter-option check">
                   <label>
-                    <input tabindex="-1" class="check-input" type="checkbox">
+                    <input class="check-input" type="checkbox">
                     <span tabindex="0" class="check-box"></span>
                      Апартаменты
                   </label>
@@ -105,7 +105,7 @@
                     <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                 </div>
-                <a aria-label="Показать гостиницы Седоны" class="show" href="#">Показать</a>
+                <button class="show" href="#">Показать</button>
             </fieldset>
           </div>
         </form>
@@ -142,7 +142,7 @@
 
         <ul class="t-hotels">
           <li class="type-hotels">
-            <div class="zaebalo">
+            <div class="hotel-pictures-price">
               <a href="#">
                 <img
                   src="img/amara.jpg"
@@ -176,7 +176,7 @@
           </li>
             
           <li class="type-hotels">
-            <div class="zaebalo">
+            <div class="hotel-pictures-price">
               <a href="#">
                 <img
                   src="img/desert.jpg"
@@ -210,7 +210,7 @@
           </li>
 
           <li class="type-hotels">
-            <div class="zaebalo">
+            <div class="hotel-pictures-price">
               <a href="#">
                 <img
                   src="img/villas.jpg"
