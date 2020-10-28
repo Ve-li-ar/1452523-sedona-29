@@ -5,14 +5,14 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body class="main-body">
     <div class="container-body">
         <header class="main-header">
           <nav class="main-navigation">
-            <a href="index.html" tabindex="-1" class="main-header-logo">
+            <a href="index.html" class="main-header-logo">
               <img src="img/logo1.svg" width="138" height="70" alt="Логотип Сайта" />
             </a>
             <ul class="site-navigation">
@@ -32,56 +32,44 @@
         <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
           <div class="filter" >
             <fieldset class="name-form">
-              <legend>Инфраструктура:</legend>
-                <ul>
-                  <li  class="filter-option check">  
-                   <label >
-                      <input class="check-input" type="checkbox" checked>
-                      <span tabindex="0" class="check-box"></span> 
-                        Бассейн
-                    </label>
-                  </li>
-                  <li class="filter-option check">
-                    <label>
-                      <input class="check-input" type="checkbox">
-                      <span tabindex="0" class="check-box"></span>
-                        Парковка
-                    </label>
-                  </li>
-                  <li class="filter-option check">  
-                    <label>
-                      <input class="check-input" type="checkbox">
-                      <span tabindex="0" class="check-box"></span>
-                        WI-FI
-                    </label>
-                  </li>
-                </ul>
+              <legend>Инфраструктура:</legend> 
+                  <label class="filter-option">
+                    <input class="check-input" type="checkbox" checked>
+                    <span class="check-box"></span> 
+                      Бассейн
+                  </label>
+                
+                  <label class="filter-option check">
+                    <input class="check-input" type="checkbox">
+                    <span class="check-box"></span>
+                      Парковка
+                  </label>
+                  
+                  <label class="filter-option check">
+                    <input class="check-input" type="checkbox">
+                    <span class="check-box"></span>
+                      WI-FI
+                  </label>
             </fieldset>
             <fieldset class="name-form">
               <legend>Тип жилья:</legend>
-              <ul>
-                <li class="filter-option check">
-                  <label>
+                  <label class="filter-option check">
                     <input class="check-input" type="checkbox" checked>
-                    <span tabindex="0" class="check-box"></span>
+                    <span class="check-box"></span>
                     Гостиница
                   </label>
-                </li>
-                <li class="filter-option check">
-                  <label>
+                
+                  <label class="filter-option check">
                     <input class="check-input" type="checkbox">
-                    <span tabindex="0" class="check-box"></span>
+                    <span class="check-box"></span>
                     Мотель
                   </label>
-                </li>
-                <li class="filter-option check">
-                  <label>
+                
+                  <label class="filter-option check">
                     <input class="check-input" type="checkbox">
-                    <span tabindex="0" class="check-box"></span>
+                    <span class="check-box"></span>
                      Апартаменты
                   </label>
-                </li>
-              </ul>
             </fieldset>
           </div>
           
@@ -290,6 +278,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="searchhotel.js"></script>
   </body>
 </html>
 

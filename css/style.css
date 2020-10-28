@@ -267,7 +267,7 @@ ul {
   font-size: 14px;
   line-height: 22px;
   padding-top: 15px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .image-town {
@@ -308,7 +308,7 @@ ul {
 .features-features {
   font-size: 21px;
   font-weight: 700;
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 .house {
@@ -368,7 +368,7 @@ ul {
 
 .go-devil {
   margin: 0;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 /*questi0n*/
@@ -384,12 +384,12 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  padding: 34px 382px 35px 382px;
+  padding: 33px 382px 34px 382px;
 }
 
 .question {
   font-size: 30px;
-  line-height: 19px;
+  line-height: 20px;
 }
 
 .search-hotel {
@@ -398,7 +398,7 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   justify-items: center;
-  padding: 30px 140px;
+  padding: 29px 138px;
   margin: 0;
   border: none;
   text-transform: uppercase;
@@ -602,7 +602,7 @@ ul {
 
   font-weight: 700;
   font-size: 21px;
-  margin-top: 25px;
+  margin-top: 26px;
 }
 
 .button-search:hover {
@@ -781,7 +781,7 @@ input::-webkit-inner-spin-button {
   padding: 0;
   margin: 0;
   border: none;
-  padding-right: 120px;
+  padding-right: 119px;
 }
 
 .name-form:last-child {
@@ -802,18 +802,11 @@ input::-webkit-inner-spin-button {
 
 .filter-option {
   cursor: pointer;
-  padding-top: 27px;
+  padding-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.filter-option label {
-  padding-left: 5px;
-}
-
-.check {
-  padding-left: 34px;
+  padding-left: 40px;
 }
 
 .check-input {
@@ -837,11 +830,10 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
 }
+
 /*checked*/
 
-.check-input:checked + .check-box,
-.check-input:focus + .check-box,
-.check-input:checked:focus + .check-box {
+.check-input:checked + .check-box {
   position: absolute;
   background-image: url(../img/checkbox-on.svg);
   width: 27px;
@@ -849,6 +841,13 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
 }
 
+.check-input:focus {
+  position: absolute;
+  margin-left: -40px;
+  outline: 4px dotted var(--basic-2);
+  width: 27px;
+  height: 23px;
+}
 /*focus*/
 
 .check-input:disabled + .check-box,
@@ -889,9 +888,8 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 7px 0 10px 3px;
-  margin-left: -6px;
-  margin-right: -5px;
+  padding: 8px 0 10px 3px;
+  margin-right: -6px;
   text-transform: uppercase;
 }
 
@@ -1110,7 +1108,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 25px 72px 30px 73px;
+  padding: 29px 73px 26px 73px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1157,7 +1155,7 @@ input::-webkit-inner-spin-button {
 }
 
 .detal-price {
-  margin-top: 14px;
+  margin-top: 10px;
   padding: 0;
 }
 
@@ -1170,7 +1168,7 @@ input::-webkit-inner-spin-button {
 .booking {
   font-size: 14px;
   line-height: 21px;
-  padding: 4px 16px;
+  padding: 3px 16px;
   color: var(--basic-1);
 }
 
@@ -1218,23 +1216,29 @@ input::-webkit-inner-spin-button {
 }
 
 .star-four {
-  width: 89px;
+  width: 90px;
   height: 17px;
+  margin-right: -3px;
+  margin-top: -1px;
 }
 
 .star-three {
-  width: 65px;
+  width: 66px;
   height: 17px;
+  margin-right: -3px;
+  margin-top: -4px;
 }
 
 .star-two {
   width: 42px;
   height: 17px;
+  margin-right: -2px;
+  margin-top: -4px;
 }
 
 .rating {
   background-color: var(--field-grey);
-  padding: 3px 12px 3px 15px;
+  padding: 4px 12px 7px 15px;
   color: var(--reiting-grey);
   margin: 0;
 }
