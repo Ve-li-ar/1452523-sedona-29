@@ -282,7 +282,6 @@ a {
   display: -ms-grid;
   display: grid;
   margin: 0;
-  text-align: center;
 }
 
 .features-all-true-city {
@@ -312,18 +311,15 @@ a {
 }
 
 .house {
-  width: 75px;
-  height: 72px;
+  background: url(../img/house.jpg) no-repeat 110px 2px;
 }
 
-.burger {
-  width: 75px;
-  height: 70px;
+.food {
+  background: url(../img/food.jpg) no-repeat 110px 2px;
 }
 
-.souvenir {
-  width: 64px;
-  height: 77px;
+.gift {
+  background: url(../img/gift.jpg) no-repeat 120px 1px;
 }
 
 .number-features {
@@ -402,8 +398,9 @@ a {
   text-transform: uppercase;
   justify-items: center;
   padding: 29px 138px;
-  margin: 0;
   border: none;
+  display: block;
+  margin: 0 317px;
 }
 
 .map {
@@ -603,54 +600,59 @@ a {
   fill: var(--basic-3);
 }
 
-.input-calendar input::-webkit-input-placeholder {
-  font-weight: 700;
-  color: var(--basic-2);
-  text-transform: uppercase;
-}
-
-.input-calendar input::-moz-placeholder {
-  font-weight: 700;
-  color: var(--basic-2);
-  text-transform: uppercase;
-}
-
-.input-calendar input:-ms-input-placeholder {
-  font-weight: 700;
-  color: var(--basic-2);
-  text-transform: uppercase;
-}
-
-.input-calendar input::-ms-input-placeholder {
-  font-weight: 700;
-  color: var(--basic-2);
-  text-transform: uppercase;
-}
-
-.input-calendar input::placeholder {
-  font-weight: 700;
-  color: var(--basic-2);
-  text-transform: uppercase;
-}
-
+.input-calendar input::-webkit-input-placeholder,
 .people input::-webkit-input-placeholder {
+  font-weight: 700;
   color: var(--basic-2);
+  text-transform: uppercase;
 }
-
+.input-calendar input::-moz-placeholder,
 .people input::-moz-placeholder {
+  font-weight: 700;
   color: var(--basic-2);
+  text-transform: uppercase;
 }
-
-.people input:-ms-input-placeholder {
-  color: var(--basic-2);
-}
-
+.input-calendar input:-ms-input-placeholder,
 .people input::-ms-input-placeholder {
+  font-weight: 700;
   color: var(--basic-2);
+  text-transform: uppercase;
 }
-
-.people input::placeholder {
+.input-calendar input::-ms-input-placeholder,
+.people input::-ms-input-placeholder {
+  font-weight: 700;
   color: var(--basic-2);
+  text-transform: uppercase;
+}
+.input-calendar input::-webkit-input-placeholder,
+.people input::-webkit-input-placeholder {
+  font-weight: 700;
+  color: var(--basic-2);
+  text-transform: uppercase;
+}
+.input-calendar input::-moz-placeholder,
+.people input::-moz-placeholder {
+  font-weight: 700;
+  color: var(--basic-2);
+  text-transform: uppercase;
+}
+.input-calendar input:-ms-input-placeholder,
+.people input:-ms-input-placeholder {
+  font-weight: 700;
+  color: var(--basic-2);
+  text-transform: uppercase;
+}
+.input-calendar input::-ms-input-placeholder,
+.people input::-ms-input-placeholder {
+  font-weight: 700;
+  color: var(--basic-2);
+  text-transform: uppercase;
+}
+.input-calendar input::placeholder,
+.people input::placeholder {
+  font-weight: 700;
+  color: var(--basic-2);
+  text-transform: uppercase;
 }
 
 .number-people {
@@ -854,6 +856,7 @@ input::-webkit-inner-spin-button {
 /*hotels*/
 .filters {
   background-image: url(../img/back-choice.jpg);
+  background-color: var(--basic-3);
   width: 100%;
   min-height: 217px;
   display: -webkit-box;
@@ -868,6 +871,7 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  background-size: cover;
 }
 
 .filter {

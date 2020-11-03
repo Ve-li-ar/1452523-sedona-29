@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link href="css/normalize.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="main-body">
@@ -32,14 +32,18 @@
               <a href="#" class="link">Карта штата</a>
             </li>
             <li class="right">
-              <a href="hotels.html" class="link">Гостиницы</a>
+              <a href="hotels.html" class="link page-active">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
+        <form
+          class="filters"
+          method="GET"
+          action="https://echo.htmlacademy.ru/"
+        >
           <div class="filter">
             <fieldset class="name-form">
               <legend>Инфраструктура:</legend>
@@ -99,8 +103,16 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <div
+                    class="toggle toggle-min"
+                    tabindex="0"
+                    aria-label="Ползунок для уменьшения цены"
+                  ></div>
+                  <div
+                    class="toggle toggle-max"
+                    tabindex="0"
+                    aria-label="Ползунок для увеличения цены"
+                  ></div>
                 </div>
               </div>
               <button class="show">Показать</button>
@@ -248,7 +260,7 @@
       <footer class="main-footer">
         <div class="footer-caption">
           <p><a href="#visitsedona">#VISITSEDONA</a></p>
-          <p><a href="+74956660166">Тел: +7(495) 666-01-66</a></p>
+          <p><a href="tel:+74956660166">Тел: +7(495) 666-01-66</a></p>
         </div>
 
         <ul class="social">
